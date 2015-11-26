@@ -1,0 +1,60 @@
+//
+// default styles for PSML
+//
+
+.psml-content {
+	
+	/* PSML Fragment Properties */
+	.psml-properties {
+	  width: 80%;
+	  
+	  th {
+	    border: 1px solid #1a54a6;
+	    background: #1a54a6;
+	    color: white;
+	    padding: 2px 4px;
+	    width: 30%;
+	    text-align: left;
+	    border-bottom: 1px solid white
+	  }
+	  
+	  tr:last-child th {
+	    border-bottom: 1px solid #1a54a6;
+	  }
+	  
+	  td {
+	    border: 1px solid #1a54a6; 
+	    width: 70%; 
+	    padding: 2px 4px;
+	  }
+	}
+	
+	/* Labels */
+	span[data-label] {
+	  border-bottom: 1px dotted;
+	}
+	div[data-label] {
+	  border: 1px solid #00abba;
+	  padding: 0 8px;
+	}
+
+  /* Indented and prefixed paragraphs */
+  .indent-1 {margin-left: 3em}
+  .indent-2 {margin-left: 6em}
+  .indent-3 {margin-left: 9em}
+  .indent-4 {margin-left: 9em}
+
+  p[data-prefix]:before {content: attr(data-prefix); margin-left: -3em; float: left; color: black}
+	
+	/* Preformatted text */
+  pre {
+    border: 1px solid #ddd;
+    border-left: 5px solid #ddd;
+    background: #eee;
+    color: #474747; 
+    padding: 1ex;
+    font-size: 13px; 
+    line-height: 110%;
+  }
+
+}
