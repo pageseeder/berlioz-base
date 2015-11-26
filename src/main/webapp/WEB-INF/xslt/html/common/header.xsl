@@ -24,8 +24,13 @@
   Default header for the application.
 -->
 <xsl:template match="root" mode="header">
-<header>
-
+<header class="header">
+  <div class="row">
+    <div class="small-12 columns">
+      <h1>Welcome to Berlioz base</h1>
+      <h2 class="subheader">An simple Berlioz app to use as a base for your project</h2>
+    </div>
+  </div>
 </header>
 </xsl:template>
 

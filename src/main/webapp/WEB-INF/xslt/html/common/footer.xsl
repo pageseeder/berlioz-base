@@ -23,7 +23,7 @@
   Default footer for the application
 -->
 <xsl:template match="root" mode="footer">
-<footer>
+<footer class="footer">
   <div class="row">
     <div class="medium-6 columns">
       <h4>Working hard to build an awesome app</h4>

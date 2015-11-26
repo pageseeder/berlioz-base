@@ -59,7 +59,7 @@
   Main part of the page.
 -->
 <xsl:template match="root" mode="main">
-<main>
+<main class="main">
   <div class="row">
     <div class="small-12 columns">
       <xsl:apply-templates select="content[@target='main']" mode="content"/>
