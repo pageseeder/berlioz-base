@@ -1,0 +1,71 @@
+/*
+ * Assemble and deploy the Web application. 
+ */
+
+buildscript {
+  repositories {
+    jcenter()
+    maven { url 'http://dl.bintray.com/robfletcher/gradle-plugins' }
+  }
+  dependencies {
+    classpath (
+      'org.akhikhl.gretty:gretty:1.2.4',
+      'org.hidetake:gradle-ssh-plugin:1.1.4',
+      'com.github.robfletcher:compass-gradle-plugin:+',
+      'com.github.jruby-gradle:jruby-gradle-plugin:0.1.+'
+    )
+  }
+}
+
+// War + Gretty + Compass
+apply plugin: 'war'
+apply plugin: 'org.akhikhl.gretty'
+apply plugin: 'com.github.robfletcher.compass'
+
+// Dependencies of the project
+repositories {
+  maven { url 'http://dl.bintray.com/pageseeder/maven' }
+  jcenter()
+}
+
+// Dependencies for your production and test code
+dependencies {
+
+  // The production code uses the SLF4J logging API at compile time
+  compile (
+    'org.slf4j:slf4j-api:1.7.12',
+    'org.pageseeder.berlioz:pso-berlioz:0.10.2',
+    'org.pageseeder.xmlwriter:pso-xmlwriter:1.0.0'
+  )
+
+  // Test dependencies
+  testCompile 'junit:junit:4.12'
+
+  // Required for Web App
+  providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
+
+  // Deployed on Berlioz
+  runtime (
+    'net.sf.saxon:Saxon-HE:9.6.0-7',
+    'ch.qos.logback:logback-core:1.1.3',
+    'ch.qos.logback:logback-classic:1.1.3',
+    'org.pageseeder.berlioz:pso-berlioz-kickstart:0.2.0'
+  )
+}
+
+// To launch Jetty locally
+gretty {
+  httpPort = 8099
+  httpsEnabled = true
+  httpsPort = 8444
+  contextPath = '/'
+  servletContainer = 'jetty9'
+}
+
+// Compass for Sass files
+compass {
+  sassDir = file("src/main/sass")
+  cssDir = file("src/main/webapp/style")
+  noLineComments = true
+  outputStyle = "compressed"
+}
