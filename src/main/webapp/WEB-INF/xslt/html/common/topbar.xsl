@@ -30,7 +30,7 @@
 <div class="top-bar">
   <div class="top-bar-left">
     <ul class="dropdown menu" data-dropdown-menu="">
-      <li class="menu-text">Site Title</li>
+      <li class="menu-text">Site title</li>
       <li class="has-submenu">
         <a href="#">One</a>
         <ul class="submenu menu vertical" data-submenu="">
@@ -39,8 +39,8 @@
           <li><a href="#">Three</a></li>
         </ul>
       </li>
-      <li><a href="#">Two</a></li>
-      <li><a href="#">Three</a></li>
+      <li><a href="/home.html">Home</a></li>
+      <li><a href="/specimen.html">Style guide</a></li>
     </ul>
   </div>
   <div class="top-bar-right">

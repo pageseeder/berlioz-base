@@ -20,6 +20,7 @@
 
 <!-- Import modules specific to each service last -->
 <xsl:import href="default/home.xsl"/>
+<xsl:import href="default/specimen.xsl"/>
 
 <!-- General Output properties. -->
 <xsl:output method="html" encoding="utf-8" indent="yes" undeclare-prefixes="no" media-type="text/html"/>
