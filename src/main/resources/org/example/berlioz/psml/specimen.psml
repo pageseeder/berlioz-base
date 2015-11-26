@@ -1,0 +1,1592 @@
+<!-- 
+  This is a sample document to help designing the typography and illustrate the various different markups in
+   PSML format.
+   
+   This document SHOULD generally be deleted (or moved) in production.
+-->
+<document>
+  <documentinfo>
+    <uri id="1" scheme="http" host="example.org" port="80" mediatype="application/vnd.pageseeder.psml+xml" path="/content/stylesguide.psml" decodedpath="/content/stylesguide.psml">
+      <displaytitle>Style guide</displaytitle>
+    </uri>
+  </documentinfo>
+  <section id="title">
+    <fragment id="1">
+      <heading level="1">Style guide</heading>
+    </fragment>
+  </section>
+
+  <section id="overview">
+    <fragment id="2">
+      <p>The style guide is design to help developers format content generated from PSML.</p>
+    </fragment>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- Headings                                                             -->
+  <!-- ==================================================================== -->
+  <section id="headings">
+
+    <fragment id="3">
+      <heading level="1">Heading level 1</heading>
+      <heading level="2">Heading level 2</heading>
+      <heading level="3">Heading level 3</heading>
+      <heading level="4">Heading level 4</heading>
+      <heading level="5">Heading level 5</heading>
+      <heading level="6">Heading level 6</heading>
+      <heading level="1">Heading level 1</heading>
+      <para>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.
+      Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec,
+      gravida vehicula, nisl.</para>
+      <heading level="2">Heading level 2</heading>
+      <para>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.
+      Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec,
+      gravida vehicula, nisl.</para>
+      <heading level="3">Heading level 3</heading>
+      <para>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.
+      Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec,
+      gravida vehicula, nisl.</para>
+      <heading level="4">Heading level 4</heading>
+      <para>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.
+      Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec,
+      gravida vehicula, nisl.</para>
+      <heading level="5">Heading level 5</heading>
+      <para>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.
+      Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec,
+      gravida vehicula, nisl.</para>
+      <heading level="6">Heading level 6</heading>
+
+    </fragment>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- Lists                                                                -->
+  <!-- ==================================================================== -->
+  <section id="lists">
+
+    <fragment id="4">
+
+      <heading level="3">Lists</heading>
+      <heading level="4">Ordered lists</heading>
+      <nlist>
+        <item>Helium - a colorless, odorless, tasteless, non-toxic, inert, monatomic gas;</item>
+        <item>Neon - a colorless, odorless monatomic gas under standard conditions, with about two-thirds the density of air;</item>
+        <item>Argon -  the third most common gas in the Earth's atmosphere, derived from the Greek word <inline label="greek">αργον</inline> meaning "lazy";</item>
+        <item>Krypton - a colorless, odorless, tasteless noble gas, krypton occurs in trace amounts in the atmosphere;</item>
+        <item>Xenon - a heavy noble gas used in flash lamps and arc lamps, and as a general anesthetic;</item>
+        <item>Radon - occurring naturally as an indirect decay product of uranium or thorium</item>
+      </nlist>
+
+      <heading level="4">A list starting at 17</heading>
+      <nlist start="17">
+        <item>Riga</item>
+        <item>Vladivostok</item>
+      </nlist>
+
+      <heading level="4">Unordered lists of primary colors</heading>
+      <list type="square">
+        <item>blue</item>
+        <item>red</item>
+        <item>yellow</item>
+      </list>
+
+      <heading level="4">Another unordered list of random years</heading>
+      <list type="disc">
+        <item>1945</item>
+        <item>1497</item>
+        <item>1789</item>
+      </list>
+
+      <heading level="4">A list of prime numbers</heading>
+      <list type="circle">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+      </list>
+
+      <heading level="4">Nesting</heading>
+      <list type="circle">
+        <item><para>By itself</para></item>
+        <item>
+          <para>One level down</para>
+          <list>
+            <item>Concept of the geostationary communications satellite</item>
+            <item>British Interplanetary Society</item>
+          </list>
+        </item>
+        <item>
+          <para>Two levels down</para>
+          <list>
+            <item>Respiratory failure</item>
+            <item>
+              <para>Two levels down</para>
+              <list>
+                <item>previously uncollected technical papers</item>
+                <item>extensive autobiographical material</item>
+              </list>
+            </item>
+          </list>
+        </item>
+      </list>
+    </fragment>
+  </section>
+  
+  <!-- ==================================================================== -->
+  <!-- Properties                                                           -->
+  <!-- ==================================================================== -->
+  <section id="properties">
+
+    <properties-fragment id="1">
+      <property name="author"   title="Author"    datatype="text">Arthur C Clark</property>
+      <property name="language" title="Published" datatype="text">English</property>
+      <property name="pubdate"  title="Published" datatype="date">1983-08-12</property>
+      <property name="editions" title="Editions"  datatype="date" count="n">
+        <value>2011-04-01</value>
+        <value>2012-09-25</value>
+      </property>
+    </properties-fragment>
+
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- Tables                                                               -->
+  <!-- ==================================================================== -->
+  <section id="content">
+
+    <fragment id="5">
+      <heading level="3">Table with single cell</heading>
+      <table>
+        <row>
+          <cell>Unicell</cell>
+        </row>
+      </table>
+    </fragment>
+
+    <fragment id="6">
+      <heading level="3">Simple table #1</heading>
+      <table role="physical">
+        <row>
+          <hcell>Density</hcell>
+          <cell>1.40 g/cm<sup>3</sup></cell>
+        </row>
+        <row>
+          <hcell>Melting Point</hcell>
+          <cell>135 °C (275 °F)</cell>
+        </row>
+        <row>
+          <hcell>Boiling Point</hcell>
+          <cell>140 °C (284 °F) </cell>
+        </row>
+      </table>
+    </fragment>
+
+    <fragment id="7">
+      <heading level="3">Simple table #2</heading>
+      <table role="alkali">
+        <row><hcell>4</hcell><hcell>12</hcell><hcell>20</hcell><hcell>38</hcell><hcell>56</hcell><hcell>88</hcell></row>
+        <row>
+          <cell><bold>Be</bold></cell>
+          <cell><bold>Mg</bold></cell>
+          <cell><bold>Ca</bold></cell>
+          <cell><bold>Sr</bold></cell>
+          <cell><bold>Ba</bold></cell>
+          <cell><bold>Ra</bold></cell>
+        </row>
+        <row>
+          <cell><para>Beryllium</para></cell>
+          <cell><para>Magnesium</para></cell>
+          <cell><para>Calcium</para></cell>
+          <cell><para>Strontium</para></cell>
+          <cell><para>Barium</para></cell>
+          <cell><para>Radium</para></cell>
+        </row>
+      </table>
+    </fragment>
+
+    <fragment id="8">
+      <heading level="3">Simple table with caption and column specifications</heading>
+      <table width="100%" height="260px">
+        <caption>Basic grid-like table</caption>
+        <col part="header" width="50%"/>
+        <col role="number" align="right"/>
+        <col role="price"  width="10%" span="2" align="bottom"/>
+        <row part="header" align="center">
+          <cell>Item</cell>
+          <cell>Number</cell>
+          <cell>Unit Price</cell>
+          <cell>Price (Total)</cell>
+        </row>
+        <row>
+          <cell>A</cell>
+          <cell>23</cell>
+          <cell>10.00</cell>
+          <cell>230.00</cell>
+        </row>
+        <row>
+          <cell>B</cell>
+          <cell>17</cell>
+          <cell>10.00</cell>
+          <cell>170.00</cell>
+        </row>
+        <row>
+          <cell>C</cell>
+          <cell>6</cell>
+          <cell>100.00</cell>
+          <cell>600.00</cell>
+        </row>
+        <row part="footer" align="bottom right">
+          <cell>Total</cell>
+          <cell>46</cell>
+          <cell>-</cell>
+          <cell align="top left">1000.00</cell>
+        </row>
+      </table>
+    </fragment>
+
+    <fragment id="9">
+      <heading level="3">Table with merged cells and multiple headers</heading>
+
+      <!-- Hierarchical heading table -->
+      <table role="redtest">
+        <caption>Test with merged cells</caption>
+        <col span="2" part="header"/>
+        <col span="2" align="right"/>
+        <col role="last" align="right"/>
+        <row part="header">
+          <cell colspan="2" rowspan="2"></cell>
+          <cell rowspan="2">Column 1</cell>
+          <cell colspan="2" align="center">Column 2</cell>
+        </row>
+        <row part="header">
+          <cell>Column 2a</cell>
+          <cell>Column 2b</cell>
+        </row>
+        <row>
+          <cell rowspan="3">Row 1</cell>
+          <cell>Row 1a</cell>
+          <cell>123</cell>
+          <cell>456</cell>
+          <cell>789</cell>
+        </row>
+        <row>
+          <cell>Row 1b</cell>
+          <cell>123</cell>
+          <cell>456</cell>
+          <cell>789</cell>
+        </row>
+        <row>
+          <cell>Row 1c</cell>
+          <cell>123</cell>
+          <cell>456</cell>
+          <cell>789</cell>
+        </row>
+        <row>
+          <cell colspan="2">Row 2</cell>
+          <cell>123</cell>
+          <cell>456</cell>
+          <cell>789</cell>
+        </row>
+      </table>
+    </fragment>
+
+    <fragment id="10">
+      <heading level="3">Table within a table (not recommended)</heading>
+      <table width="800px" role="greentest">
+        <caption>Table within a table</caption>
+        <col span="2" align="right"/>
+        <col span="3" align="center"/>
+        <row part="header">
+         <hcell colspan="2"></hcell>
+         <hcell>Column 1</hcell>
+         <hcell>Column 2</hcell>
+         <hcell>Column 3</hcell>
+        </row>
+        <row>
+         <hcell rowspan="2">Row Grouping</hcell>
+         <hcell>Row 1</hcell>
+         <cell colspan="2" rowspan="2">
+           <table role="redtest">
+             <col span="2" align="right" part="header"/>
+             <col align="center" role="data"/>
+             <row part="header">
+              <cell colspan="2"></cell>
+              <cell>SubColumn 1</cell>
+             </row>
+             <row>
+              <cell rowspan="2">Subrow Grouping</cell>
+              <cell>Subrow 1</cell>
+              <cell rowspan="2">abc</cell>
+             </row>
+             <row>
+              <cell>Subrow 2</cell>
+             </row>
+           </table>
+         </cell>
+         <cell rowspan="2">456</cell>
+        </row>
+        <row>
+         <hcell>Row 2</hcell>
+        </row>
+      </table>
+    </fragment>
+
+    <fragment id="11">
+      <heading level="3">Table with roles on rows, column and cells</heading>
+      <table role="mondrian">
+        <caption>More cell merging - Mondrian's style</caption>
+        <col span="3" width="12.5%"/>
+        <col width="25%"/>
+        <col span="2" width="16.5%"/>
+        <col width="4.5%"/>
+        <row role="eighth"><!-- #1 -->
+          <cell colspan="2">&#xa0;</cell>
+          <cell colspan="2">&#xa0;</cell>
+          <cell colspan="2" role="yellow">&#xa0;</cell>
+          <cell rowspan="4">&#xa0;</cell>
+        </row>
+        <row role="quarter"><!-- #2 -->
+          <cell>&#xa0;</cell>
+          <cell rowspan="2" colspan="3" role="red">&#xa0;</cell>
+          <cell colspan="2" role="yellow">&#xa0;</cell>
+        </row>
+        <row role="quarter"><!-- #3 -->
+          <cell rowspan="2">&#xa0;</cell>
+          <cell>&#xa0;</cell>
+          <cell>&#xa0;</cell>
+        </row>
+        <row role="eighth"><!-- #4 -->
+          <cell rowspan="2" colspan="2" role="black">&#xa0;</cell>
+          <cell>&#xa0;</cell>
+          <cell colspan="2">&#xa0;</cell>
+        </row>
+        <row role="eighth"><!-- #5 -->
+          <cell rowspan="3" role="yellow">&#xa0;</cell>
+          <cell>&#xa0;</cell>
+          <cell rowspan="2" colspan="2" role="blue">&#xa0;</cell>
+          <cell rowspan="3" role="red">&#xa0;</cell>
+        </row>
+        <row role="sixteenth"><!-- #6 -->
+          <cell rowspan="2" colspan="2">&#xa0;</cell>
+          <cell role="black">&#xa0;</cell>
+        </row>
+        <row role="sixteenth">
+          <cell colspan="3">&#xa0;</cell>
+        </row>
+      </table>
+    </fragment>
+
+  </section>
+  
+  <section id="typography">
+
+    <fragment id="12">
+
+      <heading level="2">Text formatting</heading>
+      <heading level="3">Down the Rabbit-Hole</heading>
+      <para>Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do:
+      once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in
+      it, 'and what is the use of a book,' thought Alice 'without pictures or conversation?'</para>
+      <para>So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy
+      and stupid), whether the pleasure of making a daisy-chain would be worth the trouble of getting up and picking
+      the daisies, when suddenly a White Rabbit with pink eyes ran close by her.</para>
+      <para>There was nothing so VERY remarkable in that; nor did Alice think it so VERY much out of the way to hear
+      the Rabbit say to itself, 'Oh dear! Oh dear! I shall be late!' (when she thought it over afterwards, it occurred
+      to her that she ought to have wondered at this, but at the time it all seemed quite natural); but when the Rabbit
+      actually TOOK A WATCH OUT OF ITS WAISTCOAT-POCKET, and looked at it, and then hurried on, Alice started to her
+      feet, for it flashed across her mind that she had never before seen a rabbit with either a waistcoat-pocket,
+      or a watch to take out of it, and burning with curiosity, she ran across the field after it, and fortunately
+      was just in time to see it pop down a large rabbit-hole under the hedge.</para>
+      <para>In another moment down went Alice after it, never once considering how in the world she was to get out
+      again.</para>
+      <para>The rabbit-hole went straight on like a tunnel for some way, and then dipped suddenly down, so suddenly
+      that Alice had not a moment to think about stopping herself before she found herself falling down a very deep
+      well.</para>
+
+      <heading level="3">Indenting from the pool of tears</heading>
+      <para>And she went on planning to herself how she would manage it. 'They must go by the carrier,' she thought;
+      'and how funny it'll seem, sending presents to one's own feet! And how odd the directions will look!</para>
+      <para indent="1">ALICE'S RIGHT FOOT, ESQ.</para>
+      <para indent="2">HEARTHRUG,</para>
+      <para indent="3">NEAR THE FENDER,</para>
+      <para indent="4">(WITH ALICE'S LOVE).</para>
+
+      <!-- Text formatting -->
+      <heading level="3">Inline styles</heading>
+      <para><bold>Aspirin</bold> also known as <bold>acetylsalicylic acid</bold>, is a <italic>salicylate drug</italic>
+      often used as an <link href="http://en.wikipedia.org/wiki/Analgesic">analgesic</link> to relieve minor aches and
+      pains, as an antipyretic to reduce fever, and as an <underline>anti-inflammatory</underline> medication.</para>
+      <block label="discovery"><para>Aspirin was first isolated by <inline label="scientist">Felix Hoffmann</inline>, a chemist with the German
+      company Bayer in <inline label="year">1897</inline>.</para></block>
+      <para>An just in case you're wondering, its formula is: <bold>C<sub>9</sub>H<sub>8</sub>O<sub>4</sub></bold></para>
+
+      <heading level="3">Preformatted text</heading>
+      <preformat><![CDATA[
+ /**
+  * Recursively calculate the kth Fibonacci number.
+  *
+  * @param k indicates which (positive) Fibonacci number to compute.
+  * @return the kth Fibonacci number.
+  */
+ private static int fibonacci(int k) {
+     // Base Cases:
+     //   If k == 0 then fib(k) = 0.
+     //   If k == 1 then fib(k) = 1.
+     if (k < 2) {
+         return k;
+     }
+     // Recursive Case:
+     //   If k >= 2 then fib(k) = fib(k-1) + fib(k-2).
+     return fib(k-1) + fib(k-2);
+ }]]></preformat>
+    </fragment>
+
+    <fragment id="13">
+
+      <heading level="2">Text formatting</heading>
+      <heading level="3">Down the Rabbit-Hole</heading>
+      <para prefix="I.1.1" indent="1">The greatest improvement in the productive powers of labour, and the greater part
+       of the skill, dexterity, and judgment with which it is any where directed, or applied, seem to have been the
+       effects of the division of labour.</para>
+      <para prefix="I.1.2" indent="1">The effects of the division of labour, in the general business of society, will
+       be more easily understood, by considering in what manner it operates in some particular manufactures.</para>
+      <para prefix="a" indent="2">It is commonly supposed to be carried furthest in some very trifling ones; not
+       perhaps that it really is carried further in them than in others of more importance: but in those trifling
+       manufactures which are destined to supply the small wants of but a small number of people, the whole number of
+       workmen must necessarily be small; and those employed in every different branch of the work can often be
+       collected into the same workhouse, and placed at once under the view of the spectator.</para>
+      <para prefix="b" indent="2">In those great manufactures, on the contrary, which are destined to supply the
+       great wants of the great body of the people, every different branch of the work employs so great a number of
+       workmen, that it is impossible to collect them all into the same workhouse. We can seldom see more, at one time,
+       than those employed in one single branch.</para>
+      <para prefix="c" indent="2">Though in such manufactures, therefore, the work may really be divided into a
+       much greater number of parts, than in those of a more trifling nature, the division is not near so obvious, and
+       has accordingly been much less observed.</para>
+      <para prefix="I.1.3" indent="1">To take an example, therefore, from a very trifling manufacture; but one in which
+       the division of labour has been very often taken notice of, the trade of the pin-maker; a workman not educated
+       to this business (which the division of labour has rendered a distinct trade), nor acquainted with the use of
+       the machinery employed in it (to the invention of which the same division of labour has probably given
+       occasion), could scarce, perhaps, with his utmost industry, make one pin in a day, and certainly could not make
+       twenty.</para>
+      <para indent="1">But in the way in which this business is now carried on, not only the whole work is a peculiar
+       trade, but it is divided into a number of branches, of which the greater part are likewise peculiar trades.</para>
+      <para indent="1">One man draws out the wire, another straights it, a third cuts it, a fourth points it, a fifth
+       grinds it at the top for receiving the head; to make the head requires two or three distinct operations; to put
+       it on, is a peculiar business, to whiten the pins is another; it is even a trade by itself to put them into
+       the paper; and the important business of making a pin is, in this manner, divided into about eighteen distinct
+       operations, which, in some manufactories, are all performed by distinct hands, though in others the same man
+       will sometimes perform two or three of them.</para>
+       <para indent="1">I have seen a small manufactory of this kind where ten men only were employed, and where some
+       of them consequently performed two or three distinct operations. But though they were very poor, and therefore
+       but indifferently accommodated with the necessary machinery, they could, when they exerted themselves, make
+       among them about twelve pounds of pins in a day. There are in a pound upwards of four thousand pins of a
+       middling size.</para>
+       <para indent="1">Those ten persons, therefore, could make among them upwards of forty-eight thousand pins in a
+       day.</para>
+       <para indent="1">Each person, therefore, making a tenth part of forty-eight thousand pins, might be considered
+       as making four thousand eight hundred pins in a day. But if they had all wrought separately and independently,
+       and without any of them having been educated to this peculiar business, they certainly could not each of them
+       have made twenty, perhaps not one pin in a day; that is, certainly, not the two hundred and fortieth, perhaps
+       not the four thousand eight hundredth part of what they are at present capable of performing, in consequence
+       of a proper division and combination of their different operations.</para>
+      <para prefix="I.1.4" indent="1">In every other art and manufacture, the effects of the division of labour are similar to what they are in this very trifling one; though, in many of them, the labour can neither be so much subdivided, nor reduced to so great a simplicity of operation. The division of labour, however, so far as it can be introduced, occasions, in every art, a proportionable increase of the productive powers of labour. The separation of different trades and employments from one another, seems to have taken place, in consequence of this advantage. This separation too is generally carried furthest in those countries which enjoy the highest degree of industry and improvement; what is the work of one man in a rude state of society, being generally that of several in an improved one. In every improved society, the farmer is generally nothing but a farmer; the manufacturer, nothing but a manufacturer. The labour too which is necessary to produce any one complete manufacture, is almost always divided among a great number of hands. How many different trades are employed in each branch of the linen and woollen manufactures, from the growers of the flax and the wool, to the bleachers and smoothers of the linen, or to the dyers and dressers of the cloth! The nature of agriculture, indeed, does not admit of so many subdivisions of labour, nor of so complete a separation of one business from another, as manufactures. It is impossible to separate so entirely, the business of the grazier from that of the corn-farmer, as the trade of the carpenter is commonly separated from that of the smith. The spinner is almost always a distinct person from the weaver; but the ploughman, the harrower, the sower of the seed, and the reaper of the corn, are often the same. The occasions for those different sorts of labour returning with the different seasons of the year, it is impossible that one man should be constantly employed in any one of them. This impossibility of making so complete and entire a separation of all the different branches of labour employed in agriculture, is perhaps the reason why the improvement of the productive powers of labour in this art, does not always keep pace with their improvement in manufactures. The most opulent nations, indeed, generally excel all their neighbours in agriculture as well as in manufactures; but they are commonly more distinguished by their superiority in the latter than in the former. Their lands are in general better cultivated, and having more labour and expence bestowed upon them, produce more in proportion to the extent and natural fertility of the ground. But this*22 superiority of produce is seldom much more than in proportion to the superiority of labour and expence. In agriculture, the labour of the rich country is not always much more productive than that of the poor; or, at least, it is never so much more productive, as it commonly is in manufactures. The corn of the rich country, therefore, will not always, in the same degree of goodness, come cheaper to market than that of the poor. The corn of Poland, in the same degree of goodness, is as cheap as that of France, notwithstanding the superior opulence and improvement of the latter country. The corn of France is, in the corn provinces, fully as good, and in most years nearly about the same price with the corn of England, though, in opulence and improvement, France is perhaps inferior to England. The corn-lands of England, however, are better cultivated than those of France, and the corn-lands*23 of France are said to be much better cultivated than those of Poland. But though the poor country, notwithstanding the inferiority of its cultivation, can, in some measure, rival the rich in the cheapness and goodness of its corn, it can pretend to no such competition in its manufactures; at least if those manufactures suit the soil, climate, and situation of the rich country. The silks of France are better and cheaper than those of England, because the silk manufacture, at least under the present high duties upon the importation of raw silk, does not so well suit the climate of England as that of France.*24 But the hard-ware and the coarse woollens of England are beyond all comparison superior to those of France, and much cheaper too in the same degree of goodness.*25 In Poland there are said to be scarce any manufactures of any kind, a few of those coarser household manufactures excepted, without which no country can well subsist.</para>
+    </fragment>
+
+  </section>
+
+  <section id="unicode">
+
+    <fragment id="2">
+      <heading level="2">0020 — 007F Basic Latin</heading>
+      <table>
+        <row align="center">
+          <cell><block label="glyph">&#x20;</block><monospace>0020</monospace></cell>
+          <cell><block label="glyph">&#x21;</block><monospace>0021</monospace></cell>
+          <cell><block label="glyph">&#x22;</block><monospace>0022</monospace></cell>
+          <cell><block label="glyph">&#x23;</block><monospace>0023</monospace></cell>
+          <cell><block label="glyph">&#x24;</block><monospace>0024</monospace></cell>
+          <cell><block label="glyph">&#x25;</block><monospace>0025</monospace></cell>
+          <cell><block label="glyph">&#x26;</block><monospace>0026</monospace></cell>
+          <cell><block label="glyph">&#x27;</block><monospace>0027</monospace></cell>
+          <cell><block label="glyph">&#x28;</block><monospace>0028</monospace></cell>
+          <cell><block label="glyph">&#x29;</block><monospace>0029</monospace></cell>
+          <cell><block label="glyph">&#x2A;</block><monospace>002A</monospace></cell>
+          <cell><block label="glyph">&#x2B;</block><monospace>002B</monospace></cell>
+          <cell><block label="glyph">&#x2C;</block><monospace>002C</monospace></cell>
+          <cell><block label="glyph">&#x2D;</block><monospace>002D</monospace></cell>
+          <cell><block label="glyph">&#x2E;</block><monospace>002E</monospace></cell>
+          <cell><block label="glyph">&#x2F;</block><monospace>002F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x30;</block><monospace>0030</monospace></cell>
+          <cell><block label="glyph">&#x31;</block><monospace>0031</monospace></cell>
+          <cell><block label="glyph">&#x32;</block><monospace>0032</monospace></cell>
+          <cell><block label="glyph">&#x33;</block><monospace>0033</monospace></cell>
+          <cell><block label="glyph">&#x34;</block><monospace>0034</monospace></cell>
+          <cell><block label="glyph">&#x35;</block><monospace>0035</monospace></cell>
+          <cell><block label="glyph">&#x36;</block><monospace>0036</monospace></cell>
+          <cell><block label="glyph">&#x37;</block><monospace>0037</monospace></cell>
+          <cell><block label="glyph">&#x38;</block><monospace>0038</monospace></cell>
+          <cell><block label="glyph">&#x39;</block><monospace>0039</monospace></cell>
+          <cell><block label="glyph">&#x3A;</block><monospace>003A</monospace></cell>
+          <cell><block label="glyph">&#x3B;</block><monospace>003B</monospace></cell>
+          <cell><block label="glyph">&#x3C;</block><monospace>003C</monospace></cell>
+          <cell><block label="glyph">&#x3D;</block><monospace>003D</monospace></cell>
+          <cell><block label="glyph">&#x3E;</block><monospace>003E</monospace></cell>
+          <cell><block label="glyph">&#x3F;</block><monospace>003F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x40;</block><monospace>0040</monospace></cell>
+          <cell><block label="glyph">&#x41;</block><monospace>0041</monospace></cell>
+          <cell><block label="glyph">&#x42;</block><monospace>0042</monospace></cell>
+          <cell><block label="glyph">&#x43;</block><monospace>0043</monospace></cell>
+          <cell><block label="glyph">&#x44;</block><monospace>0044</monospace></cell>
+          <cell><block label="glyph">&#x45;</block><monospace>0045</monospace></cell>
+          <cell><block label="glyph">&#x46;</block><monospace>0046</monospace></cell>
+          <cell><block label="glyph">&#x47;</block><monospace>0047</monospace></cell>
+          <cell><block label="glyph">&#x48;</block><monospace>0048</monospace></cell>
+          <cell><block label="glyph">&#x49;</block><monospace>0049</monospace></cell>
+          <cell><block label="glyph">&#x4A;</block><monospace>004A</monospace></cell>
+          <cell><block label="glyph">&#x4B;</block><monospace>004B</monospace></cell>
+          <cell><block label="glyph">&#x4C;</block><monospace>004C</monospace></cell>
+          <cell><block label="glyph">&#x4D;</block><monospace>004D</monospace></cell>
+          <cell><block label="glyph">&#x4E;</block><monospace>004E</monospace></cell>
+          <cell><block label="glyph">&#x4F;</block><monospace>004F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x50;</block><monospace>0050</monospace></cell>
+          <cell><block label="glyph">&#x51;</block><monospace>0051</monospace></cell>
+          <cell><block label="glyph">&#x52;</block><monospace>0052</monospace></cell>
+          <cell><block label="glyph">&#x53;</block><monospace>0053</monospace></cell>
+          <cell><block label="glyph">&#x54;</block><monospace>0054</monospace></cell>
+          <cell><block label="glyph">&#x55;</block><monospace>0055</monospace></cell>
+          <cell><block label="glyph">&#x56;</block><monospace>0056</monospace></cell>
+          <cell><block label="glyph">&#x57;</block><monospace>0057</monospace></cell>
+          <cell><block label="glyph">&#x58;</block><monospace>0058</monospace></cell>
+          <cell><block label="glyph">&#x59;</block><monospace>0059</monospace></cell>
+          <cell><block label="glyph">&#x5A;</block><monospace>005A</monospace></cell>
+          <cell><block label="glyph">&#x5B;</block><monospace>005B</monospace></cell>
+          <cell><block label="glyph">&#x5C;</block><monospace>005C</monospace></cell>
+          <cell><block label="glyph">&#x5D;</block><monospace>005D</monospace></cell>
+          <cell><block label="glyph">&#x5E;</block><monospace>005E</monospace></cell>
+          <cell><block label="glyph">&#x5F;</block><monospace>005F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x60;</block><monospace>0060</monospace></cell>
+          <cell><block label="glyph">&#x61;</block><monospace>0061</monospace></cell>
+          <cell><block label="glyph">&#x62;</block><monospace>0062</monospace></cell>
+          <cell><block label="glyph">&#x63;</block><monospace>0063</monospace></cell>
+          <cell><block label="glyph">&#x64;</block><monospace>0064</monospace></cell>
+          <cell><block label="glyph">&#x65;</block><monospace>0065</monospace></cell>
+          <cell><block label="glyph">&#x66;</block><monospace>0066</monospace></cell>
+          <cell><block label="glyph">&#x67;</block><monospace>0067</monospace></cell>
+          <cell><block label="glyph">&#x68;</block><monospace>0068</monospace></cell>
+          <cell><block label="glyph">&#x69;</block><monospace>0069</monospace></cell>
+          <cell><block label="glyph">&#x6A;</block><monospace>006A</monospace></cell>
+          <cell><block label="glyph">&#x6B;</block><monospace>006B</monospace></cell>
+          <cell><block label="glyph">&#x6C;</block><monospace>006C</monospace></cell>
+          <cell><block label="glyph">&#x6D;</block><monospace>006D</monospace></cell>
+          <cell><block label="glyph">&#x6E;</block><monospace>006E</monospace></cell>
+          <cell><block label="glyph">&#x6F;</block><monospace>006F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x70;</block><monospace>0070</monospace></cell>
+          <cell><block label="glyph">&#x71;</block><monospace>0071</monospace></cell>
+          <cell><block label="glyph">&#x72;</block><monospace>0072</monospace></cell>
+          <cell><block label="glyph">&#x73;</block><monospace>0073</monospace></cell>
+          <cell><block label="glyph">&#x74;</block><monospace>0074</monospace></cell>
+          <cell><block label="glyph">&#x75;</block><monospace>0075</monospace></cell>
+          <cell><block label="glyph">&#x76;</block><monospace>0076</monospace></cell>
+          <cell><block label="glyph">&#x77;</block><monospace>0077</monospace></cell>
+          <cell><block label="glyph">&#x78;</block><monospace>0078</monospace></cell>
+          <cell><block label="glyph">&#x79;</block><monospace>0079</monospace></cell>
+          <cell><block label="glyph">&#x7A;</block><monospace>007A</monospace></cell>
+          <cell><block label="glyph">&#x7B;</block><monospace>007B</monospace></cell>
+          <cell><block label="glyph">&#x7C;</block><monospace>007C</monospace></cell>
+          <cell><block label="glyph">&#x7D;</block><monospace>007D</monospace></cell>
+          <cell><block label="glyph">&#x7E;</block><monospace>007E</monospace></cell>
+          <cell><block label="glyph">&#x7F;</block><monospace>007F</monospace></cell>
+        </row>
+      </table>
+    </fragment>
+
+    <fragment id="3">
+      <heading level="2">00A0 — 00FF Latin-1 Supplement</heading>
+      <table>
+        <row align="center">
+          <cell><block label="glyph">&#xA0;</block><monospace>00A0</monospace></cell>
+          <cell><block label="glyph">&#xA1;</block><monospace>00A1</monospace></cell>
+          <cell><block label="glyph">&#xA2;</block><monospace>00A2</monospace></cell>
+          <cell><block label="glyph">&#xA3;</block><monospace>00A3</monospace></cell>
+          <cell><block label="glyph">&#xA4;</block><monospace>00A4</monospace></cell>
+          <cell><block label="glyph">&#xA5;</block><monospace>00A5</monospace></cell>
+          <cell><block label="glyph">&#xA6;</block><monospace>00A6</monospace></cell>
+          <cell><block label="glyph">&#xA7;</block><monospace>00A7</monospace></cell>
+          <cell><block label="glyph">&#xA8;</block><monospace>00A8</monospace></cell>
+          <cell><block label="glyph">&#xA9;</block><monospace>00A9</monospace></cell>
+          <cell><block label="glyph">&#xAA;</block><monospace>00AA</monospace></cell>
+          <cell><block label="glyph">&#xAB;</block><monospace>00AB</monospace></cell>
+          <cell><block label="glyph">&#xAC;</block><monospace>00AC</monospace></cell>
+          <cell><block label="glyph">&#xAD;</block><monospace>00AD</monospace></cell>
+          <cell><block label="glyph">&#xAE;</block><monospace>00AE</monospace></cell>
+          <cell><block label="glyph">&#xAF;</block><monospace>00AF</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#xB0;</block><monospace>00B0</monospace></cell>
+          <cell><block label="glyph">&#xB1;</block><monospace>00B1</monospace></cell>
+          <cell><block label="glyph">&#xB2;</block><monospace>00B2</monospace></cell>
+          <cell><block label="glyph">&#xB3;</block><monospace>00B3</monospace></cell>
+          <cell><block label="glyph">&#xB4;</block><monospace>00B4</monospace></cell>
+          <cell><block label="glyph">&#xB5;</block><monospace>00B5</monospace></cell>
+          <cell><block label="glyph">&#xB6;</block><monospace>00B6</monospace></cell>
+          <cell><block label="glyph">&#xB7;</block><monospace>00B7</monospace></cell>
+          <cell><block label="glyph">&#xB8;</block><monospace>00B8</monospace></cell>
+          <cell><block label="glyph">&#xB9;</block><monospace>00B9</monospace></cell>
+          <cell><block label="glyph">&#xBA;</block><monospace>00BA</monospace></cell>
+          <cell><block label="glyph">&#xBB;</block><monospace>00BB</monospace></cell>
+          <cell><block label="glyph">&#xBC;</block><monospace>00BC</monospace></cell>
+          <cell><block label="glyph">&#xBD;</block><monospace>00BD</monospace></cell>
+          <cell><block label="glyph">&#xBE;</block><monospace>00BE</monospace></cell>
+          <cell><block label="glyph">&#xBF;</block><monospace>00BF</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#xC0;</block><monospace>00C0</monospace></cell>
+          <cell><block label="glyph">&#xC1;</block><monospace>00C1</monospace></cell>
+          <cell><block label="glyph">&#xC2;</block><monospace>00C2</monospace></cell>
+          <cell><block label="glyph">&#xC3;</block><monospace>00C3</monospace></cell>
+          <cell><block label="glyph">&#xC4;</block><monospace>00C4</monospace></cell>
+          <cell><block label="glyph">&#xC5;</block><monospace>00C5</monospace></cell>
+          <cell><block label="glyph">&#xC6;</block><monospace>00C6</monospace></cell>
+          <cell><block label="glyph">&#xC7;</block><monospace>00C7</monospace></cell>
+          <cell><block label="glyph">&#xC8;</block><monospace>00C8</monospace></cell>
+          <cell><block label="glyph">&#xC9;</block><monospace>00C9</monospace></cell>
+          <cell><block label="glyph">&#xCA;</block><monospace>00CA</monospace></cell>
+          <cell><block label="glyph">&#xCB;</block><monospace>00CB</monospace></cell>
+          <cell><block label="glyph">&#xCC;</block><monospace>00CC</monospace></cell>
+          <cell><block label="glyph">&#xCD;</block><monospace>00CD</monospace></cell>
+          <cell><block label="glyph">&#xCE;</block><monospace>00CE</monospace></cell>
+          <cell><block label="glyph">&#xCF;</block><monospace>00CF</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#xD0;</block><monospace>00D0</monospace></cell>
+          <cell><block label="glyph">&#xD1;</block><monospace>00D1</monospace></cell>
+          <cell><block label="glyph">&#xD2;</block><monospace>00D2</monospace></cell>
+          <cell><block label="glyph">&#xD3;</block><monospace>00D3</monospace></cell>
+          <cell><block label="glyph">&#xD4;</block><monospace>00D4</monospace></cell>
+          <cell><block label="glyph">&#xD5;</block><monospace>00D5</monospace></cell>
+          <cell><block label="glyph">&#xD6;</block><monospace>00D6</monospace></cell>
+          <cell><block label="glyph">&#xD7;</block><monospace>00D7</monospace></cell>
+          <cell><block label="glyph">&#xD8;</block><monospace>00D8</monospace></cell>
+          <cell><block label="glyph">&#xD9;</block><monospace>00D9</monospace></cell>
+          <cell><block label="glyph">&#xDA;</block><monospace>00DA</monospace></cell>
+          <cell><block label="glyph">&#xDB;</block><monospace>00DB</monospace></cell>
+          <cell><block label="glyph">&#xDC;</block><monospace>00DC</monospace></cell>
+          <cell><block label="glyph">&#xDD;</block><monospace>00DD</monospace></cell>
+          <cell><block label="glyph">&#xDE;</block><monospace>00DE</monospace></cell>
+          <cell><block label="glyph">&#xDF;</block><monospace>00DF</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#xE0;</block><monospace>00E0</monospace></cell>
+          <cell><block label="glyph">&#xE1;</block><monospace>00E1</monospace></cell>
+          <cell><block label="glyph">&#xE2;</block><monospace>00E2</monospace></cell>
+          <cell><block label="glyph">&#xE3;</block><monospace>00E3</monospace></cell>
+          <cell><block label="glyph">&#xE4;</block><monospace>00E4</monospace></cell>
+          <cell><block label="glyph">&#xE5;</block><monospace>00E5</monospace></cell>
+          <cell><block label="glyph">&#xE6;</block><monospace>00E6</monospace></cell>
+          <cell><block label="glyph">&#xE7;</block><monospace>00E7</monospace></cell>
+          <cell><block label="glyph">&#xE8;</block><monospace>00E8</monospace></cell>
+          <cell><block label="glyph">&#xE9;</block><monospace>00E9</monospace></cell>
+          <cell><block label="glyph">&#xEA;</block><monospace>00EA</monospace></cell>
+          <cell><block label="glyph">&#xEB;</block><monospace>00EB</monospace></cell>
+          <cell><block label="glyph">&#xEC;</block><monospace>00EC</monospace></cell>
+          <cell><block label="glyph">&#xED;</block><monospace>00ED</monospace></cell>
+          <cell><block label="glyph">&#xEE;</block><monospace>00EE</monospace></cell>
+          <cell><block label="glyph">&#xEF;</block><monospace>00EF</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#xF0;</block><monospace>00F0</monospace></cell>
+          <cell><block label="glyph">&#xF1;</block><monospace>00F1</monospace></cell>
+          <cell><block label="glyph">&#xF2;</block><monospace>00F2</monospace></cell>
+          <cell><block label="glyph">&#xF3;</block><monospace>00F3</monospace></cell>
+          <cell><block label="glyph">&#xF4;</block><monospace>00F4</monospace></cell>
+          <cell><block label="glyph">&#xF5;</block><monospace>00F5</monospace></cell>
+          <cell><block label="glyph">&#xF6;</block><monospace>00F6</monospace></cell>
+          <cell><block label="glyph">&#xF7;</block><monospace>00F7</monospace></cell>
+          <cell><block label="glyph">&#xF8;</block><monospace>00F8</monospace></cell>
+          <cell><block label="glyph">&#xF9;</block><monospace>00F9</monospace></cell>
+          <cell><block label="glyph">&#xFA;</block><monospace>00FA</monospace></cell>
+          <cell><block label="glyph">&#xFB;</block><monospace>00FB</monospace></cell>
+          <cell><block label="glyph">&#xFC;</block><monospace>00FC</monospace></cell>
+          <cell><block label="glyph">&#xFD;</block><monospace>00FD</monospace></cell>
+          <cell><block label="glyph">&#xFE;</block><monospace>00FE</monospace></cell>
+          <cell><block label="glyph">&#xFF;</block><monospace>00FF</monospace></cell>
+        </row>
+      </table>
+    </fragment>
+
+    <fragment id="4">
+      <heading level="2">2000 — 206F General Punctuation</heading>
+      <table>
+        <row align="center">
+          <cell><block label="glyph">&#x2000;</block><monospace>2000</monospace></cell>
+          <cell><block label="glyph">&#x2001;</block><monospace>2001</monospace></cell>
+          <cell><block label="glyph">&#x2002;</block><monospace>2002</monospace></cell>
+          <cell><block label="glyph">&#x2003;</block><monospace>2003</monospace></cell>
+          <cell><block label="glyph">&#x2004;</block><monospace>2004</monospace></cell>
+          <cell><block label="glyph">&#x2005;</block><monospace>2005</monospace></cell>
+          <cell><block label="glyph">&#x2006;</block><monospace>2006</monospace></cell>
+          <cell><block label="glyph">&#x2007;</block><monospace>2007</monospace></cell>
+          <cell><block label="glyph">&#x2008;</block><monospace>2008</monospace></cell>
+          <cell><block label="glyph">&#x2009;</block><monospace>2009</monospace></cell>
+          <cell><block label="glyph">&#x200A;</block><monospace>200A</monospace></cell>
+          <cell><block label="glyph">&#x200B;</block><monospace>200B</monospace></cell>
+          <cell><block label="glyph">&#x200C;</block><monospace>200C</monospace></cell>
+          <cell><block label="glyph">&#x200D;</block><monospace>200D</monospace></cell>
+          <cell><block label="glyph">&#x200E;</block><monospace>200E</monospace></cell>
+          <cell><block label="glyph">&#x200F;</block><monospace>200F</monospace></cell>
+        </row>
+
+        <row align="center">
+          <cell><block label="glyph">&#x2010;</block><monospace>2010</monospace></cell>
+          <cell><block label="glyph">&#x2011;</block><monospace>2011</monospace></cell>
+          <cell><block label="glyph">&#x2012;</block><monospace>2012</monospace></cell>
+          <cell><block label="glyph">&#x2013;</block><monospace>2013</monospace></cell>
+          <cell><block label="glyph">&#x2014;</block><monospace>2014</monospace></cell>
+          <cell><block label="glyph">&#x2015;</block><monospace>2015</monospace></cell>
+          <cell><block label="glyph">&#x2016;</block><monospace>2016</monospace></cell>
+          <cell><block label="glyph">&#x2017;</block><monospace>2017</monospace></cell>
+          <cell><block label="glyph">&#x2018;</block><monospace>2018</monospace></cell>
+          <cell><block label="glyph">&#x2019;</block><monospace>2019</monospace></cell>
+          <cell><block label="glyph">&#x201A;</block><monospace>201A</monospace></cell>
+          <cell><block label="glyph">&#x201B;</block><monospace>201B</monospace></cell>
+          <cell><block label="glyph">&#x201C;</block><monospace>201C</monospace></cell>
+          <cell><block label="glyph">&#x201D;</block><monospace>201D</monospace></cell>
+          <cell><block label="glyph">&#x201E;</block><monospace>201E</monospace></cell>
+          <cell><block label="glyph">&#x201F;</block><monospace>201F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x2030;</block><monospace>2030</monospace></cell>
+          <cell><block label="glyph">&#x2031;</block><monospace>2031</monospace></cell>
+          <cell><block label="glyph">&#x2032;</block><monospace>2032</monospace></cell>
+          <cell><block label="glyph">&#x2033;</block><monospace>2033</monospace></cell>
+          <cell><block label="glyph">&#x2034;</block><monospace>2034</monospace></cell>
+          <cell><block label="glyph">&#x2035;</block><monospace>2035</monospace></cell>
+          <cell><block label="glyph">&#x2036;</block><monospace>2036</monospace></cell>
+          <cell><block label="glyph">&#x2037;</block><monospace>2037</monospace></cell>
+          <cell><block label="glyph">&#x2038;</block><monospace>2038</monospace></cell>
+          <cell><block label="glyph">&#x2039;</block><monospace>2039</monospace></cell>
+          <cell><block label="glyph">&#x203A;</block><monospace>203A</monospace></cell>
+          <cell><block label="glyph">&#x203B;</block><monospace>203B</monospace></cell>
+          <cell><block label="glyph">&#x203C;</block><monospace>203C</monospace></cell>
+          <cell><block label="glyph">&#x203D;</block><monospace>203D</monospace></cell>
+          <cell><block label="glyph">&#x203E;</block><monospace>203E</monospace></cell>
+          <cell><block label="glyph">&#x203F;</block><monospace>203F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x2040;</block><monospace>2040</monospace></cell>
+          <cell><block label="glyph">&#x2041;</block><monospace>2041</monospace></cell>
+          <cell><block label="glyph">&#x2042;</block><monospace>2042</monospace></cell>
+          <cell><block label="glyph">&#x2043;</block><monospace>2043</monospace></cell>
+          <cell><block label="glyph">&#x2044;</block><monospace>2044</monospace></cell>
+          <cell><block label="glyph">&#x2045;</block><monospace>2045</monospace></cell>
+          <cell><block label="glyph">&#x2046;</block><monospace>2046</monospace></cell>
+          <cell><block label="glyph">&#x2047;</block><monospace>2047</monospace></cell>
+          <cell><block label="glyph">&#x2048;</block><monospace>2048</monospace></cell>
+          <cell><block label="glyph">&#x2049;</block><monospace>2049</monospace></cell>
+          <cell><block label="glyph">&#x204A;</block><monospace>204A</monospace></cell>
+          <cell><block label="glyph">&#x204B;</block><monospace>204B</monospace></cell>
+          <cell><block label="glyph">&#x204C;</block><monospace>204C</monospace></cell>
+          <cell><block label="glyph">&#x204D;</block><monospace>204D</monospace></cell>
+          <cell><block label="glyph">&#x204E;</block><monospace>204E</monospace></cell>
+          <cell><block label="glyph">&#x204F;</block><monospace>204F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x2050;</block><monospace>2050</monospace></cell>
+          <cell><block label="glyph">&#x2051;</block><monospace>2051</monospace></cell>
+          <cell><block label="glyph">&#x2052;</block><monospace>2052</monospace></cell>
+          <cell><block label="glyph">&#x2053;</block><monospace>2053</monospace></cell>
+          <cell><block label="glyph">&#x2054;</block><monospace>2054</monospace></cell>
+          <cell><block label="glyph">&#x2055;</block><monospace>2055</monospace></cell>
+          <cell><block label="glyph">&#x2056;</block><monospace>2056</monospace></cell>
+          <cell><block label="glyph">&#x2057;</block><monospace>2057</monospace></cell>
+          <cell><block label="glyph">&#x2058;</block><monospace>2058</monospace></cell>
+          <cell><block label="glyph">&#x2059;</block><monospace>2059</monospace></cell>
+          <cell><block label="glyph">&#x205A;</block><monospace>205A</monospace></cell>
+          <cell><block label="glyph">&#x205B;</block><monospace>205B</monospace></cell>
+          <cell><block label="glyph">&#x205C;</block><monospace>205C</monospace></cell>
+          <cell><block label="glyph">&#x205D;</block><monospace>205D</monospace></cell>
+          <cell><block label="glyph">&#x205E;</block><monospace>205E</monospace></cell>
+          <cell><block label="glyph">&#x205F;</block><monospace>205F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x2060;</block><monospace>2060</monospace></cell>
+          <cell><block label="glyph">&#x2061;</block><monospace>2061</monospace></cell>
+          <cell><block label="glyph">&#x2062;</block><monospace>2062</monospace></cell>
+          <cell><block label="glyph">&#x2063;</block><monospace>2063</monospace></cell>
+          <cell><block label="glyph">&#x2064;</block><monospace>2064</monospace></cell>
+          <cell><block label="glyph">&#x2065;</block><monospace>2065</monospace></cell>
+          <cell><block label="glyph">&#x2066;</block><monospace>2066</monospace></cell>
+          <cell><block label="glyph">&#x2067;</block><monospace>2067</monospace></cell>
+          <cell><block label="glyph">&#x2068;</block><monospace>2068</monospace></cell>
+          <cell><block label="glyph">&#x2069;</block><monospace>2069</monospace></cell>
+          <cell><block label="glyph">&#x206A;</block><monospace>206A</monospace></cell>
+          <cell><block label="glyph">&#x206B;</block><monospace>206B</monospace></cell>
+          <cell><block label="glyph">&#x206C;</block><monospace>206C</monospace></cell>
+          <cell><block label="glyph">&#x206D;</block><monospace>206D</monospace></cell>
+          <cell><block label="glyph">&#x206E;</block><monospace>206E</monospace></cell>
+          <cell><block label="glyph">&#x206F;</block><monospace>206F</monospace></cell>
+        </row>
+      </table>
+    </fragment>
+
+    <fragment id="5">
+      <heading level="2">2070 — 209F Superscripts and Subscripts</heading>
+      <table>
+       <row align="center">
+          <cell><block label="glyph">&#x2070;</block><monospace>2070</monospace></cell>
+          <cell><block label="glyph">&#x2071;</block><monospace>2071</monospace></cell>
+          <cell><block label="glyph">&#x2072;</block><monospace>2072</monospace></cell>
+          <cell><block label="glyph">&#x2073;</block><monospace>2073</monospace></cell>
+          <cell><block label="glyph">&#x2074;</block><monospace>2074</monospace></cell>
+          <cell><block label="glyph">&#x2075;</block><monospace>2075</monospace></cell>
+          <cell><block label="glyph">&#x2076;</block><monospace>2076</monospace></cell>
+          <cell><block label="glyph">&#x2077;</block><monospace>2077</monospace></cell>
+          <cell><block label="glyph">&#x2078;</block><monospace>2078</monospace></cell>
+          <cell><block label="glyph">&#x2079;</block><monospace>2079</monospace></cell>
+          <cell><block label="glyph">&#x207A;</block><monospace>207A</monospace></cell>
+          <cell><block label="glyph">&#x207B;</block><monospace>207B</monospace></cell>
+          <cell><block label="glyph">&#x207C;</block><monospace>207C</monospace></cell>
+          <cell><block label="glyph">&#x207D;</block><monospace>207D</monospace></cell>
+          <cell><block label="glyph">&#x207E;</block><monospace>207E</monospace></cell>
+          <cell><block label="glyph">&#x207F;</block><monospace>207F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x2080;</block><monospace>2080</monospace></cell>
+          <cell><block label="glyph">&#x2081;</block><monospace>2081</monospace></cell>
+          <cell><block label="glyph">&#x2082;</block><monospace>2082</monospace></cell>
+          <cell><block label="glyph">&#x2083;</block><monospace>2083</monospace></cell>
+          <cell><block label="glyph">&#x2084;</block><monospace>2084</monospace></cell>
+          <cell><block label="glyph">&#x2085;</block><monospace>2085</monospace></cell>
+          <cell><block label="glyph">&#x2086;</block><monospace>2086</monospace></cell>
+          <cell><block label="glyph">&#x2087;</block><monospace>2087</monospace></cell>
+          <cell><block label="glyph">&#x2088;</block><monospace>2088</monospace></cell>
+          <cell><block label="glyph">&#x2089;</block><monospace>2089</monospace></cell>
+          <cell><block label="glyph">&#x208A;</block><monospace>208A</monospace></cell>
+          <cell><block label="glyph">&#x208B;</block><monospace>208B</monospace></cell>
+          <cell><block label="glyph">&#x208C;</block><monospace>208C</monospace></cell>
+          <cell><block label="glyph">&#x208D;</block><monospace>208D</monospace></cell>
+          <cell><block label="glyph">&#x208E;</block><monospace>208E</monospace></cell>
+          <cell><block label="glyph">&#x208F;</block><monospace>208F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x2090;</block><monospace>2090</monospace></cell>
+          <cell><block label="glyph">&#x2091;</block><monospace>2091</monospace></cell>
+          <cell><block label="glyph">&#x2092;</block><monospace>2092</monospace></cell>
+          <cell><block label="glyph">&#x2093;</block><monospace>2093</monospace></cell>
+          <cell><block label="glyph">&#x2094;</block><monospace>2094</monospace></cell>
+          <cell><block label="glyph">&#x2095;</block><monospace>2095</monospace></cell>
+          <cell><block label="glyph">&#x2096;</block><monospace>2096</monospace></cell>
+          <cell><block label="glyph">&#x2097;</block><monospace>2097</monospace></cell>
+          <cell><block label="glyph">&#x2098;</block><monospace>2098</monospace></cell>
+          <cell><block label="glyph">&#x2099;</block><monospace>2099</monospace></cell>
+          <cell><block label="glyph">&#x209A;</block><monospace>209A</monospace></cell>
+          <cell><block label="glyph">&#x209B;</block><monospace>209B</monospace></cell>
+          <cell><block label="glyph">&#x209C;</block><monospace>209C</monospace></cell>
+          <cell><block label="glyph">&#x209D;</block><monospace>209D</monospace></cell>
+          <cell><block label="glyph">&#x209E;</block><monospace>209E</monospace></cell>
+          <cell><block label="glyph">&#x209F;</block><monospace>209F</monospace></cell>
+        </row>
+      </table>
+    </fragment>
+
+    <fragment id="6">
+      <heading level="2">2150 — 218F Number Forms</heading>
+      <table>
+        <row align="center">
+          <cell><block label="glyph">&#x2150;</block><monospace>2150</monospace></cell>
+          <cell><block label="glyph">&#x2151;</block><monospace>2151</monospace></cell>
+          <cell><block label="glyph">&#x2152;</block><monospace>2152</monospace></cell>
+          <cell><block label="glyph">&#x2153;</block><monospace>2153</monospace></cell>
+          <cell><block label="glyph">&#x2154;</block><monospace>2154</monospace></cell>
+          <cell><block label="glyph">&#x2155;</block><monospace>2155</monospace></cell>
+          <cell><block label="glyph">&#x2156;</block><monospace>2156</monospace></cell>
+          <cell><block label="glyph">&#x2157;</block><monospace>2157</monospace></cell>
+          <cell><block label="glyph">&#x2158;</block><monospace>2158</monospace></cell>
+          <cell><block label="glyph">&#x2159;</block><monospace>2159</monospace></cell>
+          <cell><block label="glyph">&#x215A;</block><monospace>215A</monospace></cell>
+          <cell><block label="glyph">&#x215B;</block><monospace>215B</monospace></cell>
+          <cell><block label="glyph">&#x215C;</block><monospace>215C</monospace></cell>
+          <cell><block label="glyph">&#x215D;</block><monospace>215D</monospace></cell>
+          <cell><block label="glyph">&#x215E;</block><monospace>215E</monospace></cell>
+          <cell><block label="glyph">&#x215F;</block><monospace>215F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x2160;</block><monospace>2160</monospace></cell>
+          <cell><block label="glyph">&#x2161;</block><monospace>2161</monospace></cell>
+          <cell><block label="glyph">&#x2162;</block><monospace>2162</monospace></cell>
+          <cell><block label="glyph">&#x2163;</block><monospace>2163</monospace></cell>
+          <cell><block label="glyph">&#x2164;</block><monospace>2164</monospace></cell>
+          <cell><block label="glyph">&#x2165;</block><monospace>2165</monospace></cell>
+          <cell><block label="glyph">&#x2166;</block><monospace>2166</monospace></cell>
+          <cell><block label="glyph">&#x2167;</block><monospace>2167</monospace></cell>
+          <cell><block label="glyph">&#x2168;</block><monospace>2168</monospace></cell>
+          <cell><block label="glyph">&#x2169;</block><monospace>2169</monospace></cell>
+          <cell><block label="glyph">&#x216A;</block><monospace>216A</monospace></cell>
+          <cell><block label="glyph">&#x216B;</block><monospace>216B</monospace></cell>
+          <cell><block label="glyph">&#x216C;</block><monospace>216C</monospace></cell>
+          <cell><block label="glyph">&#x216D;</block><monospace>216D</monospace></cell>
+          <cell><block label="glyph">&#x216E;</block><monospace>216E</monospace></cell>
+          <cell><block label="glyph">&#x216F;</block><monospace>216F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x2170;</block><monospace>2170</monospace></cell>
+          <cell><block label="glyph">&#x2171;</block><monospace>2171</monospace></cell>
+          <cell><block label="glyph">&#x2172;</block><monospace>2172</monospace></cell>
+          <cell><block label="glyph">&#x2173;</block><monospace>2173</monospace></cell>
+          <cell><block label="glyph">&#x2174;</block><monospace>2174</monospace></cell>
+          <cell><block label="glyph">&#x2175;</block><monospace>2175</monospace></cell>
+          <cell><block label="glyph">&#x2176;</block><monospace>2176</monospace></cell>
+          <cell><block label="glyph">&#x2177;</block><monospace>2177</monospace></cell>
+          <cell><block label="glyph">&#x2178;</block><monospace>2178</monospace></cell>
+          <cell><block label="glyph">&#x2179;</block><monospace>2179</monospace></cell>
+          <cell><block label="glyph">&#x217A;</block><monospace>217A</monospace></cell>
+          <cell><block label="glyph">&#x217B;</block><monospace>217B</monospace></cell>
+          <cell><block label="glyph">&#x217C;</block><monospace>217C</monospace></cell>
+          <cell><block label="glyph">&#x217D;</block><monospace>217D</monospace></cell>
+          <cell><block label="glyph">&#x217E;</block><monospace>217E</monospace></cell>
+          <cell><block label="glyph">&#x217F;</block><monospace>217F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x2180;</block><monospace>2180</monospace></cell>
+          <cell><block label="glyph">&#x2181;</block><monospace>2181</monospace></cell>
+          <cell><block label="glyph">&#x2182;</block><monospace>2182</monospace></cell>
+          <cell><block label="glyph">&#x2183;</block><monospace>2183</monospace></cell>
+          <cell><block label="glyph">&#x2184;</block><monospace>2184</monospace></cell>
+          <cell><block label="glyph">&#x2185;</block><monospace>2185</monospace></cell>
+          <cell><block label="glyph">&#x2186;</block><monospace>2186</monospace></cell>
+          <cell><block label="glyph">&#x2187;</block><monospace>2187</monospace></cell>
+          <cell><block label="glyph">&#x2188;</block><monospace>2188</monospace></cell>
+          <cell><block label="glyph">&#x2189;</block><monospace>2189</monospace></cell>
+          <cell><block label="glyph">&#x218A;</block><monospace>218A</monospace></cell>
+          <cell><block label="glyph">&#x218B;</block><monospace>218B</monospace></cell>
+          <cell><block label="glyph">&#x218C;</block><monospace>218C</monospace></cell>
+          <cell><block label="glyph">&#x218D;</block><monospace>218D</monospace></cell>
+          <cell><block label="glyph">&#x218E;</block><monospace>218E</monospace></cell>
+          <cell><block label="glyph">&#x218F;</block><monospace>218F</monospace></cell>
+        </row>
+      </table>
+    </fragment>
+
+    <fragment id="7">
+      <heading level="2">2190 — 21FF Arrows</heading>
+      <table>
+        <row align="center">
+          <cell><block label="glyph">&#x2190;</block><monospace>2190</monospace></cell>
+          <cell><block label="glyph">&#x2191;</block><monospace>2191</monospace></cell>
+          <cell><block label="glyph">&#x2192;</block><monospace>2192</monospace></cell>
+          <cell><block label="glyph">&#x2193;</block><monospace>2193</monospace></cell>
+          <cell><block label="glyph">&#x2194;</block><monospace>2194</monospace></cell>
+          <cell><block label="glyph">&#x2195;</block><monospace>2195</monospace></cell>
+          <cell><block label="glyph">&#x2196;</block><monospace>2196</monospace></cell>
+          <cell><block label="glyph">&#x2197;</block><monospace>2197</monospace></cell>
+          <cell><block label="glyph">&#x2198;</block><monospace>2198</monospace></cell>
+          <cell><block label="glyph">&#x2199;</block><monospace>2199</monospace></cell>
+          <cell><block label="glyph">&#x219A;</block><monospace>219A</monospace></cell>
+          <cell><block label="glyph">&#x219B;</block><monospace>219B</monospace></cell>
+          <cell><block label="glyph">&#x219C;</block><monospace>219C</monospace></cell>
+          <cell><block label="glyph">&#x219D;</block><monospace>219D</monospace></cell>
+          <cell><block label="glyph">&#x219E;</block><monospace>219E</monospace></cell>
+          <cell><block label="glyph">&#x219F;</block><monospace>219F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x21A0;</block><monospace>21A0</monospace></cell>
+          <cell><block label="glyph">&#x21A1;</block><monospace>21A1</monospace></cell>
+          <cell><block label="glyph">&#x21A2;</block><monospace>21A2</monospace></cell>
+          <cell><block label="glyph">&#x21A3;</block><monospace>21A3</monospace></cell>
+          <cell><block label="glyph">&#x21A4;</block><monospace>21A4</monospace></cell>
+          <cell><block label="glyph">&#x21A5;</block><monospace>21A5</monospace></cell>
+          <cell><block label="glyph">&#x21A6;</block><monospace>21A6</monospace></cell>
+          <cell><block label="glyph">&#x21A7;</block><monospace>21A7</monospace></cell>
+          <cell><block label="glyph">&#x21A8;</block><monospace>21A8</monospace></cell>
+          <cell><block label="glyph">&#x21A9;</block><monospace>21A9</monospace></cell>
+          <cell><block label="glyph">&#x21AA;</block><monospace>21AA</monospace></cell>
+          <cell><block label="glyph">&#x21AB;</block><monospace>21AB</monospace></cell>
+          <cell><block label="glyph">&#x21AC;</block><monospace>21AC</monospace></cell>
+          <cell><block label="glyph">&#x21AD;</block><monospace>21AD</monospace></cell>
+          <cell><block label="glyph">&#x21AE;</block><monospace>21AE</monospace></cell>
+          <cell><block label="glyph">&#x21AF;</block><monospace>21AF</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x21B0;</block><monospace>21B0</monospace></cell>
+          <cell><block label="glyph">&#x21B1;</block><monospace>21B1</monospace></cell>
+          <cell><block label="glyph">&#x21B2;</block><monospace>21B2</monospace></cell>
+          <cell><block label="glyph">&#x21B3;</block><monospace>21B3</monospace></cell>
+          <cell><block label="glyph">&#x21B4;</block><monospace>21B4</monospace></cell>
+          <cell><block label="glyph">&#x21B5;</block><monospace>21B5</monospace></cell>
+          <cell><block label="glyph">&#x21B6;</block><monospace>21B6</monospace></cell>
+          <cell><block label="glyph">&#x21B7;</block><monospace>21B7</monospace></cell>
+          <cell><block label="glyph">&#x21B8;</block><monospace>21B8</monospace></cell>
+          <cell><block label="glyph">&#x21B9;</block><monospace>21B9</monospace></cell>
+          <cell><block label="glyph">&#x21BA;</block><monospace>21BA</monospace></cell>
+          <cell><block label="glyph">&#x21BB;</block><monospace>21BB</monospace></cell>
+          <cell><block label="glyph">&#x21BC;</block><monospace>21BC</monospace></cell>
+          <cell><block label="glyph">&#x21BD;</block><monospace>21BD</monospace></cell>
+          <cell><block label="glyph">&#x21BE;</block><monospace>21BE</monospace></cell>
+          <cell><block label="glyph">&#x21BF;</block><monospace>21BF</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x21C0;</block><monospace>21C0</monospace></cell>
+          <cell><block label="glyph">&#x21C1;</block><monospace>21C1</monospace></cell>
+          <cell><block label="glyph">&#x21C2;</block><monospace>21C2</monospace></cell>
+          <cell><block label="glyph">&#x21C3;</block><monospace>21C3</monospace></cell>
+          <cell><block label="glyph">&#x21C4;</block><monospace>21C4</monospace></cell>
+          <cell><block label="glyph">&#x21C5;</block><monospace>21C5</monospace></cell>
+          <cell><block label="glyph">&#x21C6;</block><monospace>21C6</monospace></cell>
+          <cell><block label="glyph">&#x21C7;</block><monospace>21C7</monospace></cell>
+          <cell><block label="glyph">&#x21C8;</block><monospace>21C8</monospace></cell>
+          <cell><block label="glyph">&#x21C9;</block><monospace>21C9</monospace></cell>
+          <cell><block label="glyph">&#x21CA;</block><monospace>21CA</monospace></cell>
+          <cell><block label="glyph">&#x21CB;</block><monospace>21CB</monospace></cell>
+          <cell><block label="glyph">&#x21CC;</block><monospace>21CC</monospace></cell>
+          <cell><block label="glyph">&#x21CD;</block><monospace>21CD</monospace></cell>
+          <cell><block label="glyph">&#x21CE;</block><monospace>21CE</monospace></cell>
+          <cell><block label="glyph">&#x21CF;</block><monospace>21CF</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x21D0;</block><monospace>21D0</monospace></cell>
+          <cell><block label="glyph">&#x21D1;</block><monospace>21D1</monospace></cell>
+          <cell><block label="glyph">&#x21D2;</block><monospace>21D2</monospace></cell>
+          <cell><block label="glyph">&#x21D3;</block><monospace>21D3</monospace></cell>
+          <cell><block label="glyph">&#x21D4;</block><monospace>21D4</monospace></cell>
+          <cell><block label="glyph">&#x21D5;</block><monospace>21D5</monospace></cell>
+          <cell><block label="glyph">&#x21D6;</block><monospace>21D6</monospace></cell>
+          <cell><block label="glyph">&#x21D7;</block><monospace>21D7</monospace></cell>
+          <cell><block label="glyph">&#x21D8;</block><monospace>21D8</monospace></cell>
+          <cell><block label="glyph">&#x21D9;</block><monospace>21D9</monospace></cell>
+          <cell><block label="glyph">&#x21DA;</block><monospace>21DA</monospace></cell>
+          <cell><block label="glyph">&#x21DB;</block><monospace>21DB</monospace></cell>
+          <cell><block label="glyph">&#x21DC;</block><monospace>21DC</monospace></cell>
+          <cell><block label="glyph">&#x21DD;</block><monospace>21DD</monospace></cell>
+          <cell><block label="glyph">&#x21DE;</block><monospace>21DE</monospace></cell>
+          <cell><block label="glyph">&#x21DF;</block><monospace>21DF</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x21E0;</block><monospace>21E0</monospace></cell>
+          <cell><block label="glyph">&#x21E1;</block><monospace>21E1</monospace></cell>
+          <cell><block label="glyph">&#x21E2;</block><monospace>21E2</monospace></cell>
+          <cell><block label="glyph">&#x21E3;</block><monospace>21E3</monospace></cell>
+          <cell><block label="glyph">&#x21E4;</block><monospace>21E4</monospace></cell>
+          <cell><block label="glyph">&#x21E5;</block><monospace>21E5</monospace></cell>
+          <cell><block label="glyph">&#x21E6;</block><monospace>21E6</monospace></cell>
+          <cell><block label="glyph">&#x21E7;</block><monospace>21E7</monospace></cell>
+          <cell><block label="glyph">&#x21E8;</block><monospace>21E8</monospace></cell>
+          <cell><block label="glyph">&#x21E9;</block><monospace>21E9</monospace></cell>
+          <cell><block label="glyph">&#x21EA;</block><monospace>21EA</monospace></cell>
+          <cell><block label="glyph">&#x21EB;</block><monospace>21EB</monospace></cell>
+          <cell><block label="glyph">&#x21EC;</block><monospace>21EC</monospace></cell>
+          <cell><block label="glyph">&#x21ED;</block><monospace>21ED</monospace></cell>
+          <cell><block label="glyph">&#x21EE;</block><monospace>21EE</monospace></cell>
+          <cell><block label="glyph">&#x21EF;</block><monospace>21EF</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x21F0;</block><monospace>21F0</monospace></cell>
+          <cell><block label="glyph">&#x21F1;</block><monospace>21F1</monospace></cell>
+          <cell><block label="glyph">&#x21F2;</block><monospace>21F2</monospace></cell>
+          <cell><block label="glyph">&#x21F3;</block><monospace>21F3</monospace></cell>
+          <cell><block label="glyph">&#x21F4;</block><monospace>21F4</monospace></cell>
+          <cell><block label="glyph">&#x21F5;</block><monospace>21F5</monospace></cell>
+          <cell><block label="glyph">&#x21F6;</block><monospace>21F6</monospace></cell>
+          <cell><block label="glyph">&#x21F7;</block><monospace>21F7</monospace></cell>
+          <cell><block label="glyph">&#x21F8;</block><monospace>21F8</monospace></cell>
+          <cell><block label="glyph">&#x21F9;</block><monospace>21F9</monospace></cell>
+          <cell><block label="glyph">&#x21FA;</block><monospace>21FA</monospace></cell>
+          <cell><block label="glyph">&#x21FB;</block><monospace>21FB</monospace></cell>
+          <cell><block label="glyph">&#x21FC;</block><monospace>21FC</monospace></cell>
+          <cell><block label="glyph">&#x21FD;</block><monospace>21FD</monospace></cell>
+          <cell><block label="glyph">&#x21FE;</block><monospace>21FE</monospace></cell>
+          <cell><block label="glyph">&#x21FF;</block><monospace>21FF</monospace></cell>
+        </row>
+      </table>
+    </fragment>
+
+    <fragment id="8">
+      <heading level="2">2200 — 22FF Mathematical Operators</heading>
+      <table>
+       <row align="center">
+          <cell><block label="glyph">&#x2200;</block><monospace>2200</monospace></cell>
+          <cell><block label="glyph">&#x2201;</block><monospace>2201</monospace></cell>
+          <cell><block label="glyph">&#x2202;</block><monospace>2202</monospace></cell>
+          <cell><block label="glyph">&#x2203;</block><monospace>2203</monospace></cell>
+          <cell><block label="glyph">&#x2204;</block><monospace>2204</monospace></cell>
+          <cell><block label="glyph">&#x2205;</block><monospace>2205</monospace></cell>
+          <cell><block label="glyph">&#x2206;</block><monospace>2206</monospace></cell>
+          <cell><block label="glyph">&#x2207;</block><monospace>2207</monospace></cell>
+          <cell><block label="glyph">&#x2208;</block><monospace>2208</monospace></cell>
+          <cell><block label="glyph">&#x2209;</block><monospace>2209</monospace></cell>
+          <cell><block label="glyph">&#x220A;</block><monospace>220A</monospace></cell>
+          <cell><block label="glyph">&#x220B;</block><monospace>220B</monospace></cell>
+          <cell><block label="glyph">&#x220C;</block><monospace>220C</monospace></cell>
+          <cell><block label="glyph">&#x220D;</block><monospace>220D</monospace></cell>
+          <cell><block label="glyph">&#x220E;</block><monospace>220E</monospace></cell>
+          <cell><block label="glyph">&#x220F;</block><monospace>220F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x2210;</block><monospace>2210</monospace></cell>
+          <cell><block label="glyph">&#x2211;</block><monospace>2211</monospace></cell>
+          <cell><block label="glyph">&#x2212;</block><monospace>2212</monospace></cell>
+          <cell><block label="glyph">&#x2213;</block><monospace>2213</monospace></cell>
+          <cell><block label="glyph">&#x2214;</block><monospace>2214</monospace></cell>
+          <cell><block label="glyph">&#x2215;</block><monospace>2215</monospace></cell>
+          <cell><block label="glyph">&#x2216;</block><monospace>2216</monospace></cell>
+          <cell><block label="glyph">&#x2217;</block><monospace>2217</monospace></cell>
+          <cell><block label="glyph">&#x2218;</block><monospace>2218</monospace></cell>
+          <cell><block label="glyph">&#x2219;</block><monospace>2219</monospace></cell>
+          <cell><block label="glyph">&#x221A;</block><monospace>221A</monospace></cell>
+          <cell><block label="glyph">&#x221B;</block><monospace>221B</monospace></cell>
+          <cell><block label="glyph">&#x221C;</block><monospace>221C</monospace></cell>
+          <cell><block label="glyph">&#x221D;</block><monospace>221D</monospace></cell>
+          <cell><block label="glyph">&#x221E;</block><monospace>221E</monospace></cell>
+          <cell><block label="glyph">&#x221F;</block><monospace>221F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x2230;</block><monospace>2230</monospace></cell>
+          <cell><block label="glyph">&#x2231;</block><monospace>2231</monospace></cell>
+          <cell><block label="glyph">&#x2232;</block><monospace>2232</monospace></cell>
+          <cell><block label="glyph">&#x2233;</block><monospace>2233</monospace></cell>
+          <cell><block label="glyph">&#x2234;</block><monospace>2234</monospace></cell>
+          <cell><block label="glyph">&#x2235;</block><monospace>2235</monospace></cell>
+          <cell><block label="glyph">&#x2236;</block><monospace>2236</monospace></cell>
+          <cell><block label="glyph">&#x2237;</block><monospace>2237</monospace></cell>
+          <cell><block label="glyph">&#x2238;</block><monospace>2238</monospace></cell>
+          <cell><block label="glyph">&#x2239;</block><monospace>2239</monospace></cell>
+          <cell><block label="glyph">&#x223A;</block><monospace>223A</monospace></cell>
+          <cell><block label="glyph">&#x223B;</block><monospace>223B</monospace></cell>
+          <cell><block label="glyph">&#x223C;</block><monospace>223C</monospace></cell>
+          <cell><block label="glyph">&#x223D;</block><monospace>223D</monospace></cell>
+          <cell><block label="glyph">&#x223E;</block><monospace>223E</monospace></cell>
+          <cell><block label="glyph">&#x223F;</block><monospace>223F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x2240;</block><monospace>2240</monospace></cell>
+          <cell><block label="glyph">&#x2241;</block><monospace>2241</monospace></cell>
+          <cell><block label="glyph">&#x2242;</block><monospace>2242</monospace></cell>
+          <cell><block label="glyph">&#x2243;</block><monospace>2243</monospace></cell>
+          <cell><block label="glyph">&#x2244;</block><monospace>2244</monospace></cell>
+          <cell><block label="glyph">&#x2245;</block><monospace>2245</monospace></cell>
+          <cell><block label="glyph">&#x2246;</block><monospace>2246</monospace></cell>
+          <cell><block label="glyph">&#x2247;</block><monospace>2247</monospace></cell>
+          <cell><block label="glyph">&#x2248;</block><monospace>2248</monospace></cell>
+          <cell><block label="glyph">&#x2249;</block><monospace>2249</monospace></cell>
+          <cell><block label="glyph">&#x224A;</block><monospace>224A</monospace></cell>
+          <cell><block label="glyph">&#x224B;</block><monospace>224B</monospace></cell>
+          <cell><block label="glyph">&#x224C;</block><monospace>224C</monospace></cell>
+          <cell><block label="glyph">&#x224D;</block><monospace>224D</monospace></cell>
+          <cell><block label="glyph">&#x224E;</block><monospace>224E</monospace></cell>
+          <cell><block label="glyph">&#x224F;</block><monospace>224F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x2250;</block><monospace>2250</monospace></cell>
+          <cell><block label="glyph">&#x2251;</block><monospace>2251</monospace></cell>
+          <cell><block label="glyph">&#x2252;</block><monospace>2252</monospace></cell>
+          <cell><block label="glyph">&#x2253;</block><monospace>2253</monospace></cell>
+          <cell><block label="glyph">&#x2254;</block><monospace>2254</monospace></cell>
+          <cell><block label="glyph">&#x2255;</block><monospace>2255</monospace></cell>
+          <cell><block label="glyph">&#x2256;</block><monospace>2256</monospace></cell>
+          <cell><block label="glyph">&#x2257;</block><monospace>2257</monospace></cell>
+          <cell><block label="glyph">&#x2258;</block><monospace>2258</monospace></cell>
+          <cell><block label="glyph">&#x2259;</block><monospace>2259</monospace></cell>
+          <cell><block label="glyph">&#x225A;</block><monospace>225A</monospace></cell>
+          <cell><block label="glyph">&#x225B;</block><monospace>225B</monospace></cell>
+          <cell><block label="glyph">&#x225C;</block><monospace>225C</monospace></cell>
+          <cell><block label="glyph">&#x225D;</block><monospace>225D</monospace></cell>
+          <cell><block label="glyph">&#x225E;</block><monospace>225E</monospace></cell>
+          <cell><block label="glyph">&#x225F;</block><monospace>225F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x2260;</block><monospace>2260</monospace></cell>
+          <cell><block label="glyph">&#x2261;</block><monospace>2261</monospace></cell>
+          <cell><block label="glyph">&#x2262;</block><monospace>2262</monospace></cell>
+          <cell><block label="glyph">&#x2263;</block><monospace>2263</monospace></cell>
+          <cell><block label="glyph">&#x2264;</block><monospace>2264</monospace></cell>
+          <cell><block label="glyph">&#x2265;</block><monospace>2265</monospace></cell>
+          <cell><block label="glyph">&#x2266;</block><monospace>2266</monospace></cell>
+          <cell><block label="glyph">&#x2267;</block><monospace>2267</monospace></cell>
+          <cell><block label="glyph">&#x2268;</block><monospace>2268</monospace></cell>
+          <cell><block label="glyph">&#x2269;</block><monospace>2269</monospace></cell>
+          <cell><block label="glyph">&#x226A;</block><monospace>226A</monospace></cell>
+          <cell><block label="glyph">&#x226B;</block><monospace>226B</monospace></cell>
+          <cell><block label="glyph">&#x226C;</block><monospace>226C</monospace></cell>
+          <cell><block label="glyph">&#x226D;</block><monospace>226D</monospace></cell>
+          <cell><block label="glyph">&#x226E;</block><monospace>226E</monospace></cell>
+          <cell><block label="glyph">&#x226F;</block><monospace>226F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x2270;</block><monospace>2270</monospace></cell>
+          <cell><block label="glyph">&#x2271;</block><monospace>2271</monospace></cell>
+          <cell><block label="glyph">&#x2272;</block><monospace>2272</monospace></cell>
+          <cell><block label="glyph">&#x2273;</block><monospace>2273</monospace></cell>
+          <cell><block label="glyph">&#x2274;</block><monospace>2274</monospace></cell>
+          <cell><block label="glyph">&#x2275;</block><monospace>2275</monospace></cell>
+          <cell><block label="glyph">&#x2276;</block><monospace>2276</monospace></cell>
+          <cell><block label="glyph">&#x2277;</block><monospace>2277</monospace></cell>
+          <cell><block label="glyph">&#x2278;</block><monospace>2278</monospace></cell>
+          <cell><block label="glyph">&#x2279;</block><monospace>2279</monospace></cell>
+          <cell><block label="glyph">&#x227A;</block><monospace>227A</monospace></cell>
+          <cell><block label="glyph">&#x227B;</block><monospace>227B</monospace></cell>
+          <cell><block label="glyph">&#x227C;</block><monospace>227C</monospace></cell>
+          <cell><block label="glyph">&#x227D;</block><monospace>227D</monospace></cell>
+          <cell><block label="glyph">&#x227E;</block><monospace>227E</monospace></cell>
+          <cell><block label="glyph">&#x227F;</block><monospace>227F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x2280;</block><monospace>2280</monospace></cell>
+          <cell><block label="glyph">&#x2281;</block><monospace>2281</monospace></cell>
+          <cell><block label="glyph">&#x2282;</block><monospace>2282</monospace></cell>
+          <cell><block label="glyph">&#x2283;</block><monospace>2283</monospace></cell>
+          <cell><block label="glyph">&#x2284;</block><monospace>2284</monospace></cell>
+          <cell><block label="glyph">&#x2285;</block><monospace>2285</monospace></cell>
+          <cell><block label="glyph">&#x2286;</block><monospace>2286</monospace></cell>
+          <cell><block label="glyph">&#x2287;</block><monospace>2287</monospace></cell>
+          <cell><block label="glyph">&#x2288;</block><monospace>2288</monospace></cell>
+          <cell><block label="glyph">&#x2289;</block><monospace>2289</monospace></cell>
+          <cell><block label="glyph">&#x228A;</block><monospace>228A</monospace></cell>
+          <cell><block label="glyph">&#x228B;</block><monospace>228B</monospace></cell>
+          <cell><block label="glyph">&#x228C;</block><monospace>228C</monospace></cell>
+          <cell><block label="glyph">&#x228D;</block><monospace>228D</monospace></cell>
+          <cell><block label="glyph">&#x228E;</block><monospace>228E</monospace></cell>
+          <cell><block label="glyph">&#x228F;</block><monospace>228F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x2290;</block><monospace>2290</monospace></cell>
+          <cell><block label="glyph">&#x2291;</block><monospace>2291</monospace></cell>
+          <cell><block label="glyph">&#x2292;</block><monospace>2292</monospace></cell>
+          <cell><block label="glyph">&#x2293;</block><monospace>2293</monospace></cell>
+          <cell><block label="glyph">&#x2294;</block><monospace>2294</monospace></cell>
+          <cell><block label="glyph">&#x2295;</block><monospace>2295</monospace></cell>
+          <cell><block label="glyph">&#x2296;</block><monospace>2296</monospace></cell>
+          <cell><block label="glyph">&#x2297;</block><monospace>2297</monospace></cell>
+          <cell><block label="glyph">&#x2298;</block><monospace>2298</monospace></cell>
+          <cell><block label="glyph">&#x2299;</block><monospace>2299</monospace></cell>
+          <cell><block label="glyph">&#x229A;</block><monospace>229A</monospace></cell>
+          <cell><block label="glyph">&#x229B;</block><monospace>229B</monospace></cell>
+          <cell><block label="glyph">&#x229C;</block><monospace>229C</monospace></cell>
+          <cell><block label="glyph">&#x229D;</block><monospace>229D</monospace></cell>
+          <cell><block label="glyph">&#x229E;</block><monospace>229E</monospace></cell>
+          <cell><block label="glyph">&#x229F;</block><monospace>229F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x22A0;</block><monospace>22A0</monospace></cell>
+          <cell><block label="glyph">&#x22A1;</block><monospace>22A1</monospace></cell>
+          <cell><block label="glyph">&#x22A2;</block><monospace>22A2</monospace></cell>
+          <cell><block label="glyph">&#x22A3;</block><monospace>22A3</monospace></cell>
+          <cell><block label="glyph">&#x22A4;</block><monospace>22A4</monospace></cell>
+          <cell><block label="glyph">&#x22A5;</block><monospace>22A5</monospace></cell>
+          <cell><block label="glyph">&#x22A6;</block><monospace>22A6</monospace></cell>
+          <cell><block label="glyph">&#x22A7;</block><monospace>22A7</monospace></cell>
+          <cell><block label="glyph">&#x22A8;</block><monospace>22A8</monospace></cell>
+          <cell><block label="glyph">&#x22A9;</block><monospace>22A9</monospace></cell>
+          <cell><block label="glyph">&#x22AA;</block><monospace>22AA</monospace></cell>
+          <cell><block label="glyph">&#x22AB;</block><monospace>22AB</monospace></cell>
+          <cell><block label="glyph">&#x22AC;</block><monospace>22AC</monospace></cell>
+          <cell><block label="glyph">&#x22AD;</block><monospace>22AD</monospace></cell>
+          <cell><block label="glyph">&#x22AE;</block><monospace>22AE</monospace></cell>
+          <cell><block label="glyph">&#x22AF;</block><monospace>22AF</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x22B0;</block><monospace>22B0</monospace></cell>
+          <cell><block label="glyph">&#x22B1;</block><monospace>22B1</monospace></cell>
+          <cell><block label="glyph">&#x22B2;</block><monospace>22B2</monospace></cell>
+          <cell><block label="glyph">&#x22B3;</block><monospace>22B3</monospace></cell>
+          <cell><block label="glyph">&#x22B4;</block><monospace>22B4</monospace></cell>
+          <cell><block label="glyph">&#x22B5;</block><monospace>22B5</monospace></cell>
+          <cell><block label="glyph">&#x22B6;</block><monospace>22B6</monospace></cell>
+          <cell><block label="glyph">&#x22B7;</block><monospace>22B7</monospace></cell>
+          <cell><block label="glyph">&#x22B8;</block><monospace>22B8</monospace></cell>
+          <cell><block label="glyph">&#x22B9;</block><monospace>22B9</monospace></cell>
+          <cell><block label="glyph">&#x22BA;</block><monospace>22BA</monospace></cell>
+          <cell><block label="glyph">&#x22BB;</block><monospace>22BB</monospace></cell>
+          <cell><block label="glyph">&#x22BC;</block><monospace>22BC</monospace></cell>
+          <cell><block label="glyph">&#x22BD;</block><monospace>22BD</monospace></cell>
+          <cell><block label="glyph">&#x22BE;</block><monospace>22BE</monospace></cell>
+          <cell><block label="glyph">&#x22BF;</block><monospace>22BF</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x22C0;</block><monospace>22C0</monospace></cell>
+          <cell><block label="glyph">&#x22C1;</block><monospace>22C1</monospace></cell>
+          <cell><block label="glyph">&#x22C2;</block><monospace>22C2</monospace></cell>
+          <cell><block label="glyph">&#x22C3;</block><monospace>22C3</monospace></cell>
+          <cell><block label="glyph">&#x22C4;</block><monospace>22C4</monospace></cell>
+          <cell><block label="glyph">&#x22C5;</block><monospace>22C5</monospace></cell>
+          <cell><block label="glyph">&#x22C6;</block><monospace>22C6</monospace></cell>
+          <cell><block label="glyph">&#x22C7;</block><monospace>22C7</monospace></cell>
+          <cell><block label="glyph">&#x22C8;</block><monospace>22C8</monospace></cell>
+          <cell><block label="glyph">&#x22C9;</block><monospace>22C9</monospace></cell>
+          <cell><block label="glyph">&#x22CA;</block><monospace>22CA</monospace></cell>
+          <cell><block label="glyph">&#x22CB;</block><monospace>22CB</monospace></cell>
+          <cell><block label="glyph">&#x22CC;</block><monospace>22CC</monospace></cell>
+          <cell><block label="glyph">&#x22CD;</block><monospace>22CD</monospace></cell>
+          <cell><block label="glyph">&#x22CE;</block><monospace>22CE</monospace></cell>
+          <cell><block label="glyph">&#x22CF;</block><monospace>22CF</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x22D0;</block><monospace>22D0</monospace></cell>
+          <cell><block label="glyph">&#x22D1;</block><monospace>22D1</monospace></cell>
+          <cell><block label="glyph">&#x22D2;</block><monospace>22D2</monospace></cell>
+          <cell><block label="glyph">&#x22D3;</block><monospace>22D3</monospace></cell>
+          <cell><block label="glyph">&#x22D4;</block><monospace>22D4</monospace></cell>
+          <cell><block label="glyph">&#x22D5;</block><monospace>22D5</monospace></cell>
+          <cell><block label="glyph">&#x22D6;</block><monospace>22D6</monospace></cell>
+          <cell><block label="glyph">&#x22D7;</block><monospace>22D7</monospace></cell>
+          <cell><block label="glyph">&#x22D8;</block><monospace>22D8</monospace></cell>
+          <cell><block label="glyph">&#x22D9;</block><monospace>22D9</monospace></cell>
+          <cell><block label="glyph">&#x22DA;</block><monospace>22DA</monospace></cell>
+          <cell><block label="glyph">&#x22DB;</block><monospace>22DB</monospace></cell>
+          <cell><block label="glyph">&#x22DC;</block><monospace>22DC</monospace></cell>
+          <cell><block label="glyph">&#x22DD;</block><monospace>22DD</monospace></cell>
+          <cell><block label="glyph">&#x22DE;</block><monospace>22DE</monospace></cell>
+          <cell><block label="glyph">&#x22DF;</block><monospace>22DF</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x22E0;</block><monospace>22E0</monospace></cell>
+          <cell><block label="glyph">&#x22E1;</block><monospace>22E1</monospace></cell>
+          <cell><block label="glyph">&#x22E2;</block><monospace>22E2</monospace></cell>
+          <cell><block label="glyph">&#x22E3;</block><monospace>22E3</monospace></cell>
+          <cell><block label="glyph">&#x22E4;</block><monospace>22E4</monospace></cell>
+          <cell><block label="glyph">&#x22E5;</block><monospace>22E5</monospace></cell>
+          <cell><block label="glyph">&#x22E6;</block><monospace>22E6</monospace></cell>
+          <cell><block label="glyph">&#x22E7;</block><monospace>22E7</monospace></cell>
+          <cell><block label="glyph">&#x22E8;</block><monospace>22E8</monospace></cell>
+          <cell><block label="glyph">&#x22E9;</block><monospace>22E9</monospace></cell>
+          <cell><block label="glyph">&#x22EA;</block><monospace>22EA</monospace></cell>
+          <cell><block label="glyph">&#x22EB;</block><monospace>22EB</monospace></cell>
+          <cell><block label="glyph">&#x22EC;</block><monospace>22EC</monospace></cell>
+          <cell><block label="glyph">&#x22ED;</block><monospace>22ED</monospace></cell>
+          <cell><block label="glyph">&#x22EE;</block><monospace>22EE</monospace></cell>
+          <cell><block label="glyph">&#x22EF;</block><monospace>22EF</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x22F0;</block><monospace>22F0</monospace></cell>
+          <cell><block label="glyph">&#x22F1;</block><monospace>22F1</monospace></cell>
+          <cell><block label="glyph">&#x22F2;</block><monospace>22F2</monospace></cell>
+          <cell><block label="glyph">&#x22F3;</block><monospace>22F3</monospace></cell>
+          <cell><block label="glyph">&#x22F4;</block><monospace>22F4</monospace></cell>
+          <cell><block label="glyph">&#x22F5;</block><monospace>22F5</monospace></cell>
+          <cell><block label="glyph">&#x22F6;</block><monospace>22F6</monospace></cell>
+          <cell><block label="glyph">&#x22F7;</block><monospace>22F7</monospace></cell>
+          <cell><block label="glyph">&#x22F8;</block><monospace>22F8</monospace></cell>
+          <cell><block label="glyph">&#x22F9;</block><monospace>22F9</monospace></cell>
+          <cell><block label="glyph">&#x22FA;</block><monospace>22FA</monospace></cell>
+          <cell><block label="glyph">&#x22FB;</block><monospace>22FB</monospace></cell>
+          <cell><block label="glyph">&#x22FC;</block><monospace>22FC</monospace></cell>
+          <cell><block label="glyph">&#x22FD;</block><monospace>22FD</monospace></cell>
+          <cell><block label="glyph">&#x22FE;</block><monospace>22FE</monospace></cell>
+          <cell><block label="glyph">&#x22FF;</block><monospace>22FF</monospace></cell>
+        </row>
+      </table>
+     </fragment>
+
+   <fragment id="8">
+      <heading level="2">2700 — 27BF Dingbats</heading>
+      <table>
+       <row align="center">
+          <cell><block label="glyph">&#x2700;</block><monospace>2700</monospace></cell>
+          <cell><block label="glyph">&#x2701;</block><monospace>2701</monospace></cell>
+          <cell><block label="glyph">&#x2702;</block><monospace>2702</monospace></cell>
+          <cell><block label="glyph">&#x2703;</block><monospace>2703</monospace></cell>
+          <cell><block label="glyph">&#x2704;</block><monospace>2704</monospace></cell>
+          <cell><block label="glyph">&#x2705;</block><monospace>2705</monospace></cell>
+          <cell><block label="glyph">&#x2706;</block><monospace>2706</monospace></cell>
+          <cell><block label="glyph">&#x2707;</block><monospace>2707</monospace></cell>
+          <cell><block label="glyph">&#x2708;</block><monospace>2708</monospace></cell>
+          <cell><block label="glyph">&#x2709;</block><monospace>2709</monospace></cell>
+          <cell><block label="glyph">&#x270A;</block><monospace>270A</monospace></cell>
+          <cell><block label="glyph">&#x270B;</block><monospace>270B</monospace></cell>
+          <cell><block label="glyph">&#x270C;</block><monospace>270C</monospace></cell>
+          <cell><block label="glyph">&#x270D;</block><monospace>270D</monospace></cell>
+          <cell><block label="glyph">&#x270E;</block><monospace>270E</monospace></cell>
+          <cell><block label="glyph">&#x270F;</block><monospace>270F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x2710;</block><monospace>2710</monospace></cell>
+          <cell><block label="glyph">&#x2711;</block><monospace>2711</monospace></cell>
+          <cell><block label="glyph">&#x2712;</block><monospace>2712</monospace></cell>
+          <cell><block label="glyph">&#x2713;</block><monospace>2713</monospace></cell>
+          <cell><block label="glyph">&#x2714;</block><monospace>2714</monospace></cell>
+          <cell><block label="glyph">&#x2715;</block><monospace>2715</monospace></cell>
+          <cell><block label="glyph">&#x2716;</block><monospace>2716</monospace></cell>
+          <cell><block label="glyph">&#x2717;</block><monospace>2717</monospace></cell>
+          <cell><block label="glyph">&#x2718;</block><monospace>2718</monospace></cell>
+          <cell><block label="glyph">&#x2719;</block><monospace>2719</monospace></cell>
+          <cell><block label="glyph">&#x271A;</block><monospace>271A</monospace></cell>
+          <cell><block label="glyph">&#x271B;</block><monospace>271B</monospace></cell>
+          <cell><block label="glyph">&#x271C;</block><monospace>271C</monospace></cell>
+          <cell><block label="glyph">&#x271D;</block><monospace>271D</monospace></cell>
+          <cell><block label="glyph">&#x271E;</block><monospace>271E</monospace></cell>
+          <cell><block label="glyph">&#x271F;</block><monospace>271F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x2730;</block><monospace>2730</monospace></cell>
+          <cell><block label="glyph">&#x2731;</block><monospace>2731</monospace></cell>
+          <cell><block label="glyph">&#x2732;</block><monospace>2732</monospace></cell>
+          <cell><block label="glyph">&#x2733;</block><monospace>2733</monospace></cell>
+          <cell><block label="glyph">&#x2734;</block><monospace>2734</monospace></cell>
+          <cell><block label="glyph">&#x2735;</block><monospace>2735</monospace></cell>
+          <cell><block label="glyph">&#x2736;</block><monospace>2736</monospace></cell>
+          <cell><block label="glyph">&#x2737;</block><monospace>2737</monospace></cell>
+          <cell><block label="glyph">&#x2738;</block><monospace>2738</monospace></cell>
+          <cell><block label="glyph">&#x2739;</block><monospace>2739</monospace></cell>
+          <cell><block label="glyph">&#x273A;</block><monospace>273A</monospace></cell>
+          <cell><block label="glyph">&#x273B;</block><monospace>273B</monospace></cell>
+          <cell><block label="glyph">&#x273C;</block><monospace>273C</monospace></cell>
+          <cell><block label="glyph">&#x273D;</block><monospace>273D</monospace></cell>
+          <cell><block label="glyph">&#x273E;</block><monospace>273E</monospace></cell>
+          <cell><block label="glyph">&#x273F;</block><monospace>273F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x2740;</block><monospace>2740</monospace></cell>
+          <cell><block label="glyph">&#x2741;</block><monospace>2741</monospace></cell>
+          <cell><block label="glyph">&#x2742;</block><monospace>2742</monospace></cell>
+          <cell><block label="glyph">&#x2743;</block><monospace>2743</monospace></cell>
+          <cell><block label="glyph">&#x2744;</block><monospace>2744</monospace></cell>
+          <cell><block label="glyph">&#x2745;</block><monospace>2745</monospace></cell>
+          <cell><block label="glyph">&#x2746;</block><monospace>2746</monospace></cell>
+          <cell><block label="glyph">&#x2747;</block><monospace>2747</monospace></cell>
+          <cell><block label="glyph">&#x2748;</block><monospace>2748</monospace></cell>
+          <cell><block label="glyph">&#x2749;</block><monospace>2749</monospace></cell>
+          <cell><block label="glyph">&#x274A;</block><monospace>274A</monospace></cell>
+          <cell><block label="glyph">&#x274B;</block><monospace>274B</monospace></cell>
+          <cell><block label="glyph">&#x274C;</block><monospace>274C</monospace></cell>
+          <cell><block label="glyph">&#x274D;</block><monospace>274D</monospace></cell>
+          <cell><block label="glyph">&#x274E;</block><monospace>274E</monospace></cell>
+          <cell><block label="glyph">&#x274F;</block><monospace>274F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x2750;</block><monospace>2750</monospace></cell>
+          <cell><block label="glyph">&#x2751;</block><monospace>2751</monospace></cell>
+          <cell><block label="glyph">&#x2752;</block><monospace>2752</monospace></cell>
+          <cell><block label="glyph">&#x2753;</block><monospace>2753</monospace></cell>
+          <cell><block label="glyph">&#x2754;</block><monospace>2754</monospace></cell>
+          <cell><block label="glyph">&#x2755;</block><monospace>2755</monospace></cell>
+          <cell><block label="glyph">&#x2756;</block><monospace>2756</monospace></cell>
+          <cell><block label="glyph">&#x2757;</block><monospace>2757</monospace></cell>
+          <cell><block label="glyph">&#x2758;</block><monospace>2758</monospace></cell>
+          <cell><block label="glyph">&#x2759;</block><monospace>2759</monospace></cell>
+          <cell><block label="glyph">&#x275A;</block><monospace>275A</monospace></cell>
+          <cell><block label="glyph">&#x275B;</block><monospace>275B</monospace></cell>
+          <cell><block label="glyph">&#x275C;</block><monospace>275C</monospace></cell>
+          <cell><block label="glyph">&#x275D;</block><monospace>275D</monospace></cell>
+          <cell><block label="glyph">&#x275E;</block><monospace>275E</monospace></cell>
+          <cell><block label="glyph">&#x275F;</block><monospace>275F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x2760;</block><monospace>2760</monospace></cell>
+          <cell><block label="glyph">&#x2761;</block><monospace>2761</monospace></cell>
+          <cell><block label="glyph">&#x2762;</block><monospace>2762</monospace></cell>
+          <cell><block label="glyph">&#x2763;</block><monospace>2763</monospace></cell>
+          <cell><block label="glyph">&#x2764;</block><monospace>2764</monospace></cell>
+          <cell><block label="glyph">&#x2765;</block><monospace>2765</monospace></cell>
+          <cell><block label="glyph">&#x2766;</block><monospace>2766</monospace></cell>
+          <cell><block label="glyph">&#x2767;</block><monospace>2767</monospace></cell>
+          <cell><block label="glyph">&#x2768;</block><monospace>2768</monospace></cell>
+          <cell><block label="glyph">&#x2769;</block><monospace>2769</monospace></cell>
+          <cell><block label="glyph">&#x276A;</block><monospace>276A</monospace></cell>
+          <cell><block label="glyph">&#x276B;</block><monospace>276B</monospace></cell>
+          <cell><block label="glyph">&#x276C;</block><monospace>276C</monospace></cell>
+          <cell><block label="glyph">&#x276D;</block><monospace>276D</monospace></cell>
+          <cell><block label="glyph">&#x276E;</block><monospace>276E</monospace></cell>
+          <cell><block label="glyph">&#x276F;</block><monospace>276F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x2770;</block><monospace>2770</monospace></cell>
+          <cell><block label="glyph">&#x2771;</block><monospace>2771</monospace></cell>
+          <cell><block label="glyph">&#x2772;</block><monospace>2772</monospace></cell>
+          <cell><block label="glyph">&#x2773;</block><monospace>2773</monospace></cell>
+          <cell><block label="glyph">&#x2774;</block><monospace>2774</monospace></cell>
+          <cell><block label="glyph">&#x2775;</block><monospace>2775</monospace></cell>
+          <cell><block label="glyph">&#x2776;</block><monospace>2776</monospace></cell>
+          <cell><block label="glyph">&#x2777;</block><monospace>2777</monospace></cell>
+          <cell><block label="glyph">&#x2778;</block><monospace>2778</monospace></cell>
+          <cell><block label="glyph">&#x2779;</block><monospace>2779</monospace></cell>
+          <cell><block label="glyph">&#x277A;</block><monospace>277A</monospace></cell>
+          <cell><block label="glyph">&#x277B;</block><monospace>277B</monospace></cell>
+          <cell><block label="glyph">&#x277C;</block><monospace>277C</monospace></cell>
+          <cell><block label="glyph">&#x277D;</block><monospace>277D</monospace></cell>
+          <cell><block label="glyph">&#x277E;</block><monospace>277E</monospace></cell>
+          <cell><block label="glyph">&#x277F;</block><monospace>277F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x2780;</block><monospace>2780</monospace></cell>
+          <cell><block label="glyph">&#x2781;</block><monospace>2781</monospace></cell>
+          <cell><block label="glyph">&#x2782;</block><monospace>2782</monospace></cell>
+          <cell><block label="glyph">&#x2783;</block><monospace>2783</monospace></cell>
+          <cell><block label="glyph">&#x2784;</block><monospace>2784</monospace></cell>
+          <cell><block label="glyph">&#x2785;</block><monospace>2785</monospace></cell>
+          <cell><block label="glyph">&#x2786;</block><monospace>2786</monospace></cell>
+          <cell><block label="glyph">&#x2787;</block><monospace>2787</monospace></cell>
+          <cell><block label="glyph">&#x2788;</block><monospace>2788</monospace></cell>
+          <cell><block label="glyph">&#x2789;</block><monospace>2789</monospace></cell>
+          <cell><block label="glyph">&#x278A;</block><monospace>278A</monospace></cell>
+          <cell><block label="glyph">&#x278B;</block><monospace>278B</monospace></cell>
+          <cell><block label="glyph">&#x278C;</block><monospace>278C</monospace></cell>
+          <cell><block label="glyph">&#x278D;</block><monospace>278D</monospace></cell>
+          <cell><block label="glyph">&#x278E;</block><monospace>278E</monospace></cell>
+          <cell><block label="glyph">&#x278F;</block><monospace>278F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x2790;</block><monospace>2790</monospace></cell>
+          <cell><block label="glyph">&#x2791;</block><monospace>2791</monospace></cell>
+          <cell><block label="glyph">&#x2792;</block><monospace>2792</monospace></cell>
+          <cell><block label="glyph">&#x2793;</block><monospace>2793</monospace></cell>
+          <cell><block label="glyph">&#x2794;</block><monospace>2794</monospace></cell>
+          <cell><block label="glyph">&#x2795;</block><monospace>2795</monospace></cell>
+          <cell><block label="glyph">&#x2796;</block><monospace>2796</monospace></cell>
+          <cell><block label="glyph">&#x2797;</block><monospace>2797</monospace></cell>
+          <cell><block label="glyph">&#x2798;</block><monospace>2798</monospace></cell>
+          <cell><block label="glyph">&#x2799;</block><monospace>2799</monospace></cell>
+          <cell><block label="glyph">&#x279A;</block><monospace>279A</monospace></cell>
+          <cell><block label="glyph">&#x279B;</block><monospace>279B</monospace></cell>
+          <cell><block label="glyph">&#x279C;</block><monospace>279C</monospace></cell>
+          <cell><block label="glyph">&#x279D;</block><monospace>279D</monospace></cell>
+          <cell><block label="glyph">&#x279E;</block><monospace>279E</monospace></cell>
+          <cell><block label="glyph">&#x279F;</block><monospace>279F</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x27A0;</block><monospace>27A0</monospace></cell>
+          <cell><block label="glyph">&#x27A1;</block><monospace>27A1</monospace></cell>
+          <cell><block label="glyph">&#x27A2;</block><monospace>27A2</monospace></cell>
+          <cell><block label="glyph">&#x27A3;</block><monospace>27A3</monospace></cell>
+          <cell><block label="glyph">&#x27A4;</block><monospace>27A4</monospace></cell>
+          <cell><block label="glyph">&#x27A5;</block><monospace>27A5</monospace></cell>
+          <cell><block label="glyph">&#x27A6;</block><monospace>27A6</monospace></cell>
+          <cell><block label="glyph">&#x27A7;</block><monospace>27A7</monospace></cell>
+          <cell><block label="glyph">&#x27A8;</block><monospace>27A8</monospace></cell>
+          <cell><block label="glyph">&#x27A9;</block><monospace>27A9</monospace></cell>
+          <cell><block label="glyph">&#x27AA;</block><monospace>27AA</monospace></cell>
+          <cell><block label="glyph">&#x27AB;</block><monospace>27AB</monospace></cell>
+          <cell><block label="glyph">&#x27AC;</block><monospace>27AC</monospace></cell>
+          <cell><block label="glyph">&#x27AD;</block><monospace>27AD</monospace></cell>
+          <cell><block label="glyph">&#x27AE;</block><monospace>27AE</monospace></cell>
+          <cell><block label="glyph">&#x27AF;</block><monospace>27AF</monospace></cell>
+        </row>
+        <row align="center">
+          <cell><block label="glyph">&#x27B0;</block><monospace>27B0</monospace></cell>
+          <cell><block label="glyph">&#x27B1;</block><monospace>27B1</monospace></cell>
+          <cell><block label="glyph">&#x27B2;</block><monospace>27B2</monospace></cell>
+          <cell><block label="glyph">&#x27B3;</block><monospace>27B3</monospace></cell>
+          <cell><block label="glyph">&#x27B4;</block><monospace>27B4</monospace></cell>
+          <cell><block label="glyph">&#x27B5;</block><monospace>27B5</monospace></cell>
+          <cell><block label="glyph">&#x27B6;</block><monospace>27B6</monospace></cell>
+          <cell><block label="glyph">&#x27B7;</block><monospace>27B7</monospace></cell>
+          <cell><block label="glyph">&#x27B8;</block><monospace>27B8</monospace></cell>
+          <cell><block label="glyph">&#x27B9;</block><monospace>27B9</monospace></cell>
+          <cell><block label="glyph">&#x27BA;</block><monospace>27BA</monospace></cell>
+          <cell><block label="glyph">&#x27BB;</block><monospace>27BB</monospace></cell>
+          <cell><block label="glyph">&#x27BC;</block><monospace>27BC</monospace></cell>
+          <cell><block label="glyph">&#x27BD;</block><monospace>27BD</monospace></cell>
+          <cell><block label="glyph">&#x27BE;</block><monospace>27BE</monospace></cell>
+          <cell><block label="glyph">&#x27BF;</block><monospace>27BF</monospace></cell>
+        </row>
+      </table>
+     </fragment>
+  </section>
+
+</document>

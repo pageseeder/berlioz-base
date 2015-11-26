@@ -25,6 +25,13 @@
       <generator target="main" name="home"    class="org.example.berlioz.HelloWorld" />
     </service>
 
+    <!-- Specimen -->
+    <service id="specimen" method="get">
+      <url pattern="/specimen" />
+      <generator target="html" name="bundles" class="org.pageseeder.berlioz.bundler.GetWebBundles" />
+      <generator target="main" name="specimen"    class="org.example.berlioz.GetPSMLSpecimen" />
+    </service>
+
   </services>
 
 </service-config>
