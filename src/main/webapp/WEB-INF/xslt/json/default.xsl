@@ -10,7 +10,7 @@
 <xsl:stylesheet version="2.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                xmlns:json="http://weborganic.org/JSON"
+                xmlns:json="http://pageseeder.org/JSON"
                 exclude-result-prefixes="#all">
 
 <!-- JSON output properties -->
