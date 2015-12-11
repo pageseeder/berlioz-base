@@ -49,7 +49,9 @@ dependencies {
     'net.sf.saxon:Saxon-HE:9.6.0-7',
     'ch.qos.logback:logback-core:1.1.3',
     'ch.qos.logback:logback-classic:1.1.3',
-    'org.pageseeder.berlioz:pso-berlioz-kickstart:0.2.0'
+    'org.pageseeder.berlioz:pso-berlioz-kickstart:0.2.0',
+    'javax.json:javax.json-api:1.0',
+    'com.owlike:genson:1.3'
   )
 }
 
