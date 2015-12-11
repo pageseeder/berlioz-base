@@ -16,7 +16,7 @@
   <berlioz>
     <errors handle="true" generator-catch="false"/>
     <http compression="true" get-via-post="true" max-age="45"/>
-    <xml parse-strict="true"/>
+    <xml parse-strict="true" header.version="1.0"/>
     <xslt cache="false"/>
   </berlioz>
 
