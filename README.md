@@ -45,7 +45,7 @@ When Berlioz starts it will print the following on the console:
 ```
 
 You can then access the app at:
- - [http://localhost:8999/](http://localhost:8099/)
+ - [http://localhost:8099/](http://localhost:8099/)
  - [https://localhost:8444/](https://localhost:8444/)
 
 # Troubleshooting
